@@ -1,41 +1,29 @@
-
-#include <bits/stdc++.h> 
-
-using namespace std; 
-class Unnati 
-{ 
-	public: 
-	
-	// function with int parameter 
-	void func(int x) 
-	{ 
-		cout << "value of x is " << x << endl; 
-	} 
-	
-	// function with same name  double parameter 
-	void func(double x) 
-	{ 
-		cout << "value of x is " << x << endl; 
-	} 
-	
-	// function with same name and 2 int parameters 
-	void func(int x, int y) 
-	{ 
-		cout << "value of x and y is " << x << ", " << y << endl; 
-	} 
-}; 
-
-int main() { 
-	
-	Unnati obj1; 
-	
-	// The first 'func' is called 
-	obj1.func(7); 
-	
-	// The second 'func' is called 
-	obj1.func(9.132); 
-	
-	// The third 'func' is called 
-	obj1.func(85,64); 
-	return 0; 
-} 
+#include<iostream>
+using namespace std;
+class Class1
+{
+  public:
+  
+  void print(int x)
+  {
+    cout<<"value of x is: "<<x<<endl;
+  }
+  
+  void print(double x)
+  {
+    cout<<"Value of x is:"<<x<<endl;
+  }
+  
+  void print(int x,int y)
+  {
+    cout<<"Value of x and y: "<<x <<" "<< y<<endl;
+  }
+  
+};
+int main()
+{
+  Class1 obj;
+  obj.print(12);
+  obj.print(120.133);
+  obj.print(12,23);
+}
