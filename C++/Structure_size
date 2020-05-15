@@ -1,0 +1,14 @@
+#include<iostream>
+using namspace std;
+struct Unnati
+{
+int num;
+char name[10];
+}obj;
+int main()
+{
+cout<<sizeof(obj);
+return 0;
+}
+
+//OUTPUT 16
