@@ -1,1 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Let Vs Var</title>
+<body>
+<p>Let is block scoped and var is available throughout the function</p>
+<br><br>
+<h1 id="var" style="color : black;">Unnati is Beautiful</h1>
+
+<h1 id="let" style="color :black;">Unnati is Cute</h1>
+
+<button id="btn" onclick="color()">Start</button>
+
+<script type="text/javascript">
+function color()
+{
+setInterval(function()
+{
+if(document.getElementById('var').style.color=='black')
+var col1='pink';
+else
+col1='black';
+
+if(document.getElementById('let').style.color=='black')
+{
+let col2='red';
+
+}
+else
+{
+col2='black';
+}
+document.getElementById('var').style.color=col1;
+document.getElementById('let').style.color=col2;
+},500);
+}
+</script>
+</body>
+</html>
 
