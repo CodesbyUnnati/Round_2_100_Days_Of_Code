@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1 id="change" style="color: red;">Unnati</h1>
+    <button onclick="color()">Click Me!</button>
+
+
+
+    <script type="text/javascript">
+        function color(params) {
+
+            document.getElementById('change').style.color = 'blue';
+
+        }
+    </script>
+</body>
+
+</html>
