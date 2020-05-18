@@ -3,10 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="practice2.css" />
     <title>PRACTICE2</title>
   </head>
   <body>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 3rem;
+        justify-content: center;
+      }
+
+      button {
+        margin-left: 40%;
+        justify-content: center;
+        font-size: 2em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border-radius: 30%;
+        color: aqua;
+        background-color: black;
+        outline: none;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        color: black;
+        background-color: aqua;
+      }
+    </style>
     <h1 id="para">
       Hello! I am Unnati Mishra. I live in Gujarat. This is a Practice on change
       of the Paragraph.
