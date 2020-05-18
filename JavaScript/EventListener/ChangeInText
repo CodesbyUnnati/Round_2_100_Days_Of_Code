@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="practice2.css" />
+    <title>PRACTICE2</title>
+  </head>
+  <body>
+    <h1 id="para">
+      Hello! I am Unnati Mishra. I live in Gujarat. This is a Practice on change
+      of the Paragraph.
+    </h1>
+    <button onclick="change()">Click Me</button>
+
+    <script>
+      function change() {
+        document.getElementById("para").innerHTML =
+          "Hey There ! This paragraph changed due to a click on this button. Event Listener changes the details when an event id placed.";
+      }
+    </script>
+  </body>
+</html>
