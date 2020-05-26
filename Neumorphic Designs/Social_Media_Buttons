@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="social.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <title>Neumorphism</title>
+</head>
+
+<body>
+    <section class="end-bar">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
+
+
+//CSS
+
+.end-bar ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.end-bar ul li {
+    list-style: none;
+}
+
+.end-bar ul li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+
+}
+
+.end-bar ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.end-bar ul li a .fa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px- 12px);
+    font-size: 37px;
+    color: #262626;
+    transition: .5s;
+
+
+
+}
+
+.end-bar ul li:nth-child(1) a:hover .fa {
+    color: #3b5998;
+}
+
+.end-bar ul li:nth-child(2) a:hover .fa {
+    color: #00aced;
+}
+
+.end-bar ul li:nth-child(3) a:hover .fa {
+    color: #dd4b39;
+}
+
+.end-bar ul li:nth-child(4) a:hover .fa {
+    color: #007bb6;
+}
+
+.end-bar ul li:nth-child(5) a:hover .fa {
+    color: #bc2a8d;
+}
+
+.end-bar ul li:nth-child(6) a:hover .fa {
+    color: #FF0000;
+}
