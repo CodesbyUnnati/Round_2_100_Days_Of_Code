@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+
+<body>
+  <h1>Bottom to Top Scroll</h1>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      font-size: 3rem;
+      color: #282C34;
+
+    }
+
+    section {
+      width: 100%;
+
+      background-size: cover;
+    }
+
+    .gotopbtn {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      background: #282C34;
+      bottom: 40px;
+      right: 50px;
+      border-radius: 40%;
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
+      color: white;
+      font-size: 22px;
+    }
+  </style>
+
+  <section>
+    <img src="undraw_treasure_of9i.png">
+    <img src="undraw_code_typing_7jnv.png">
+    <img src="undraw_business_plan_5i9d.png">
+  </section>
+
+  <a class="gotopbtn" href="#"> <i class="fas fa-hand-point-up"></i> </a>
+</body>
+
+</html>
