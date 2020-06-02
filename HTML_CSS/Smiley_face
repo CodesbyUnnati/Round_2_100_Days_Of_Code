@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+
+
+        .box {
+            margin-top: 200px;
+            margin-right: 2px;
+            height: 200px;
+            width: 200px;
+            background-color: gold;
+            margin-left: 650px;
+            border-radius: 50%;
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            top: 310px;
+            left: 48%;
+            width: 65px;
+            height: 28px;
+            margin-left: -20px;
+            border-bottom: 10px solid red;
+            border-left: px solid red;
+            border-right: px solid red;
+            border-radius: 15px 25px 68px 68px;
+        }
+
+        .eye-1 {
+            height: 25px;
+            width: 15px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 718px;
+            transform: translateY(-630%);
+
+        }
+
+        .eye-1::before {
+            content: '';
+            position: absolute;
+            top: -28px;
+            left: 38%;
+            width: 35px;
+            height: 8px;
+            margin-left: -18px;
+            border-bottom-left-radius: 20px;
+            border-bottom: 5px solid black;
+            border-left: px solid black;
+            border-right: px solid black;
+            border-radius: px 25px 68px 68px;
+        }
+
+        .eye-2 {
+            height: 25px;
+            width: 15px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 770px;
+            transform: translateY(-730%);
+
+        }
+
+        .eye-2::before {
+            top: -28px;
+            content: '';
+            position: absolute;
+            top: px;
+            left: 38%;
+            width: 35px;
+            height: 8px;
+            margin-left: -15px;
+            border-bottom-right-radius: 20px;
+            border-bottom: 5px solid black;
+            border-left: px solid black;
+            border-right: px solid black;
+            border-radius: px 25px 68px 68px;
+        }
+    </style>
+    <div class="container">
+        <div class="face">
+            <div class="box">
+
+            </div>
+            <div class="eye-1"></div>
+            <div class="eye-2"></div>
+            <div class="smile"></div>
+        </div>
+    </div>
+</body>
+
+</html>
