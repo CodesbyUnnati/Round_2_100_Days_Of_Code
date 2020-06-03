@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background: lightblue;
+        }
+
+        .face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 150;
+            margin: auto;
+            height: 40;
+            width: 65;
+            background: black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .head {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 150;
+            margin: auto;
+            height: 75;
+            width: 100;
+            z-index: -1;
+            background: white;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .body {
+            position: absolute;
+            top: 60;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            height: 120;
+            width: 115;
+            background: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+
+        .left-hand {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 230;
+            bottom: 25;
+            margin: auto;
+            height: 30;
+            width: 100;
+            background: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 10px;
+            animation: hand 1s linear infinite;
+            transform: rotateZ(45deg);
+        }
+
+        .right-hand {
+            position: absolute;
+            top: 50;
+            left: 165;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            height: 30;
+            width: 100;
+            background: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 50px;
+            transform: rotateZ(90deg)
+        }
+
+        @keyframes hand {
+            0% {
+                transform: translateY(-40px) rotateZ(45deg);
+            }
+
+            50% {
+                transform: translateY(0px) rotateZ(-0deg);
+            }
+
+            100% {
+                transform: translateY(-40px) rotateZ(45deg);
+            }
+        }
+
+        .eye1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 25;
+            bottom: 150;
+            margin: auto;
+            height: 10px;
+            width: 15px;
+            background: repeating-linear-gradient(blue 70%, #002966 80%, blue);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            animation: blink 1s linear infinite;
+        }
+
+        .eye2 {
+            position: absolute;
+            top: 0;
+            left: 25;
+            right: 0;
+            bottom: 150;
+            margin: auto;
+            height: 10px;
+            width: 15px;
+            background: repeating-linear-gradient(blue 70%, #002966 80%, blue);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                height: 10px;
+            }
+
+            25% {
+                height: 6px;
+            }
+
+            50% {
+                height: 1px;
+            }
+
+            75% {
+                height: 6px;
+            }
+
+            100% {
+                heigth: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="face"></div>
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="left-hand"></div>
+    <div class="right-hand"></div>
+    <div class="eye1"></div>
+    <div class="eye2"></div>
+</body>
+
+</html>
