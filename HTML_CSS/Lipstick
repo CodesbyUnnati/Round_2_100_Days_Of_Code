@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        .top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 50px;
+            height: 150px;
+            width: 65px;
+            background: palevioletred;
+            border-top-left-radius:5000px;
+            border-top-right-radius: 500px;
+            border: 3px solid pink ;
+            
+        }
+
+        .line1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 90px;
+            bottom: 0px;
+            height: 10px;
+            width: 68px;
+            background: #C7C7C7;
+            border-radius: 6px;
+        }
+
+        .line2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 112px;
+            bottom: 0px;
+            height: 10px;
+            width: 68px;
+            background: #C7C7C7;
+            border-radius: 6px;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 134px;
+            bottom: 0px;
+            height: 10px;
+            width: 68px;
+            background: #C7C7C7;
+            border-radius: 6px;
+        }
+
+        .middle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 307px;
+            bottom: 0px;
+            height: 160px;
+            width: 75px;
+            background: #131313;
+            border-radius: 3px;
+        }
+        .bottom
+        {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 500px;
+              bottom: 0px;
+              height: 40px;
+              width: 95px;
+              background: #131313;
+              border-radius: 3px;
+
+        }
+    </style>
+    <div class="top"></div>
+    <div class="top-mid"></div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="middle"></div>
+    <div class="bottom"></div>
+</body>
+
+</html>
