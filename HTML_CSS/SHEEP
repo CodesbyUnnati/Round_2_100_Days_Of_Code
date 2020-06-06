@@ -1,0 +1,392 @@
+<!--THIS IS NOT RESPONSIVE-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheep</title>
+</head>
+
+<body>
+    <style>
+        html {
+
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes bob {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: 0.2rem;
+            }
+        }
+
+        body {
+            background: #00b4ff;
+            vertical-align: middle;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            transform: translate3d(0, 0, 0);
+
+        }
+
+        #background-wrap {
+            bottom: 0;
+            left: 0;
+            padding-top: 50px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        /* KEYFRAMES */
+
+        @keyframes animateCloud {
+            0% {
+                margin-left: -1000px;
+            }
+
+            100% {
+                margin-left: 100%;
+            }
+        }
+
+        /* ANIMATIONS */
+
+        .x1 {
+
+            animation: animateCloud 35s linear infinite;
+            transform: scale(0.65);
+        }
+
+        .x2 {
+
+            animation: animateCloud 20s linear infinite;
+            transform: scale(0.3);
+        }
+
+        .x3 {
+
+            animation: animateCloud 30s linear infinite;
+            transform: scale(0.5);
+        }
+
+        .x4 {
+
+            animation: animateCloud 18s linear infinite;
+            transform: scale(0.4);
+        }
+
+        .x5 {
+            animation: animateCloud 25s linear infinite;
+            transform: scale(0.55);
+        }
+
+        /* OBJECTS */
+
+        .cloud {
+            background: #fff;
+            background: linear-gradient(top, #fff 5%, #f1f1f1 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#f1f1f1', GradientType=0);
+            border-radius: 100px;
+            bottom: 0px;
+            top: -1100px;
+
+            box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+            height: 120px;
+            position: relative;
+            width: 350px;
+        }
+
+        .cloud:after,
+        .cloud:before {
+            background: #fff;
+            content: '';
+            position: absolute;
+            z-indeX: -1;
+        }
+
+        .cloud:after {
+
+            border-radius: 100px;
+            height: 100px;
+            left: 50px;
+            top: -50px;
+            width: 100px;
+        }
+
+        .cloud:before {
+
+            border-radius: 200px;
+            width: 180px;
+            height: 180px;
+            right: 50px;
+            top: -90px;
+        }
+
+        body::before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -0.25em;
+        }
+
+        .scene {
+            display: inline-block;
+            vertical-align: middle;
+        }
+/*----SHEEP-----*/
+
+        .sheep {
+            display: inline-block;
+            position: relative;
+            font-size: 1em;
+        }
+
+        .scene * {
+            transition: transform 0.3s;
+        }
+
+        .scene .top {
+            position: relative;
+            top: 0;
+            animation: bob 1s infinite;
+        }
+
+        .sheep:hover .head {
+            transform: rotate(0deg);
+        }
+
+        .sheep:hover .head .eye {
+            width: 1.25em;
+            height: 1.25em;
+        }
+
+        .sheep:hover .head .eye::before {
+            right: 30%;
+        }
+
+        .sheep:hover .top {
+            animation-play-state: paused;
+        }
+
+        .sheep .head {
+            display: inline-block;
+            width: 5em;
+            height: 5em;
+            border-radius: 100%;
+            background: #211e21;
+            vertical-align: middle;
+            position: relative;
+            top: 1em;
+            transform: rotate(30deg);
+        }
+
+        .sheep .head::before {
+            content: "";
+            display: inline-block;
+            width: 80%;
+            height: 50%;
+            background: #211e21;
+            position: absolute;
+            bottom: 0;
+            right: -10%;
+            border-radius: 50% 40%;
+        }
+
+        .sheep .head .eye {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            border-radius: 100%;
+            background: white;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .eye1 {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            left: 120px;
+            top: 5px;
+        }
+
+        .eye2 {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            left: 90px;
+            top: 5px;
+        }
+
+        .dot1 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #000;
+            border-radius: 50%;
+            left: 95px;
+            top: 13px;
+            z-index: 100;
+        }
+
+        .dot2 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #000;
+            border-radius: 50%;
+            left: 125px;
+            top: 13px;
+            z-index: 100;
+        }
+
+        .ear1 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #211e21;
+            border-radius: 40%;
+            left: 55px;
+            top: 1px;
+            z-index: 100;
+        }
+
+        .ear2 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #211e21;
+            border-radius: 40%;
+            left: 135px;
+            top: 1px;
+            z-index: -1;
+        }
+
+        .sheep .body {
+            display: inline-block;
+            width: 7em;
+            height: 7em;
+            border-radius: 100%;
+            background: white;
+            vertical-align: middle;
+            margin-right: -3em;
+        }
+
+        .leg {
+            display: inline-block;
+            position: absolute;
+            margin: auto;
+            top: 400px;
+            left: 708px;
+            z-index: -1;
+
+            width: 10px;
+            height: 50px;
+            background: #211e21;
+        }
+
+        .leg2 {
+            display: inline-block;
+            position: absolute;
+            top: 400px;
+            left: 725px;
+            z-index: -1;
+
+            width: 10px;
+            height: 50px;
+            background: #211e21;
+        }
+
+        .leg3 {
+            display: inline-block;
+            position: absolute;
+            top: 400px;
+            left: 745px;
+            z-index: -1;
+
+            width: 10px;
+            height: 50px;
+            background: #211e21;
+        }
+
+        .leg4 {
+            display: inline-block;
+            position: absolute;
+            top: 400px;
+            left: 762px;
+            z-index: -1;
+
+            width: 10px;
+            height: 50px;
+            background: #211e21;
+        }
+
+        .sheep::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 112%;
+            width: 100%;
+            height: 10%;
+            border-radius: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+    <div class="scene">
+        <div class="sheep">
+            <span class="top">
+                <div class="body"></div>
+                <div class="head"></div>
+                <div class="eye1"></div>
+                <div class="dot1"></div>
+                <div class="eye2"></div>
+                <div class="dot2"></div>
+                <div class="ear1"></div>
+                <div class="ear2"></div>
+            </span>
+        </div>
+
+        <div class="leg"></div>
+        <div class="leg2"></div>
+        <div class="leg3"></div>
+        <div class="leg4"></div>
+    </div>
+    <div class="background-wrap">
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
+    </div>
+</body>
+
+</html>
