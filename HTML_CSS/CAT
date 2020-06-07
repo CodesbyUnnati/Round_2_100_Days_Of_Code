@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samosa</title>
+</head>
+
+<body>
+    <style>
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: brown;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        .cat {
+            position: relative;
+            top: 150px;
+            left: 50px;
+        }
+
+        .face {
+            background-color: #3C3EAD;
+            height: 90px;
+            width: 150px;
+            border-radius: 30px;
+        }
+
+        .ear-l,
+        .ear-r {
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid #3C3EAD;
+            border-left: 20px solid transparent;
+            border-right: 21px solid transparent;
+            position: relative;
+            z-index: -1;
+        }
+
+        .ear-l {
+            bottom: 35px;
+            transform: rotate(-30deg);
+        }
+
+        .ear-r {
+            bottom: 85px;
+            left: 110px;
+            transform: rotate(30deg);
+        }
+
+        .inner1 {
+            width: 15px;
+            height: 0;
+            top: 25px;
+            border-bottom: 10px solid #d36149;
+            border-right: 25px solid transparent;
+            transform: rotate(252deg);
+            right: 20px;
+           position: relative;
+        }
+
+        .inner2 {
+            width: 0;
+            height: 0;
+            border-bottom: 30px solid #d36149;
+            border-right: 25px solid transparent;
+            right: 5px;
+            transform: rotate(20deg);
+            position: relative;
+        }
+
+        .eye-1,
+        .eye-r {
+            background-color: #d2873b;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .eye-1 {
+            bottom: 90px;
+            left: 30px;
+        }
+
+        .eye-r {
+            bottom: 119px;
+            left: 85px;
+        }
+
+        .eyeball {
+            background-color: #262626;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            position: relative;
+            top: 3px;
+            left: 3px;
+        }
+
+        .nose {
+            height: 0;
+            width: 0;
+            border-top: 8px solid #d36149;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            position: relative;
+            bottom: 110px;
+            left: 68px;
+        }
+
+        .l1,
+        .l2 {
+            background-color: #d36149;
+            height: 8px;
+            width: 1px;
+            position: relative;
+        }
+
+        .l1 {
+            transform: rotate(45deg);
+            right: 4px;
+            bottom: 1.5px;
+        }
+
+        .l2 {
+            transform: rotate(-45deg);
+            bottom: 10px;
+            left: 3px;
+        }
+
+        .body {
+            background-color: #3C3EAD;
+            height: 120px;
+            width: 130px;
+            position: relative;
+            left: 30px;
+            bottom: 5px;
+            border-radius: 0 65px 0 0;
+        }
+
+        .paw-l,
+        .paw-r {
+            background-color: #3C3EAD;
+            height: 10px;
+            width: 22px;
+            position: relative;
+            border-radius: 0 0px 10px 10px;
+        }
+
+        .paw-l {
+            top: 120px;
+
+        }
+
+        .paw-r {
+            top: 110px;
+            left: 50px;
+        }
+
+        .tail {
+            background-color: #3C3EAD;
+            width: 100px;
+            height: 20px;
+            position: relative;
+            top: 80px;
+            left: 100px;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .shadow {
+            background-color: rgba(8, 8, 8, 0.5);
+            height: 30px;
+            width: 150px;
+            border-radius: 50%;
+            position: relative;
+            bottom: 15px;
+            left: 20px;
+            z-index: -1;
+
+
+        }
+    </style>
+
+</body>
+<div class="container">
+    <div class="cat">
+        <div class="face">
+            <div class="ear-l">
+                <div class="inner1">
+
+                </div>
+            </div>
+            <div class="ear-r">
+                > <div class="inner2"></div>
+            </div>
+            <div class="eye-1">
+                <div class="eyeball"></div>
+            </div>
+            <div class="eye-r">
+                <div class="eyeball"></div>
+            </div>
+            <div class="nose">
+                <div class="l1"></div>
+                <div class="l2"></div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="paw-l"></div>
+            <div class="paw-r"></div>
+            <div class="tail"></div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+</div>
+
+</html>
