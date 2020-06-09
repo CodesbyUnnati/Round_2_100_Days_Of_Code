@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Box</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: #CD5C5C;
+        }
+
+        .box {
+            position: absolute;
+            margin: auto;
+            height: 200px;
+            width: 270px;
+            background: white;
+            left: 10%;
+            right: 10%;
+            top: 20%;
+            border-radius: 10%;
+        }
+
+        .handle {
+            position: absolute;
+            margin: inherit;
+            left: 45.5%;
+            right: 10%;
+            top: 13.55%;
+            height: 10px;
+            width: 120px;
+            background: white;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+
+        .bar-1 {
+            position: absolute;
+            margin: inherit;
+            width: 10px;
+            height: 40px;
+            background: white;
+            top: 15%;
+            left: 45.5%;
+            z-index: -1;
+
+        }
+
+        .bar-2 {
+            position: absolute;
+            margin: inherit;
+            width: 10px;
+            height: 40px;
+            background: white;
+            top: 15%;
+            left: 52.7%;
+            z-index: -1;
+
+        }
+
+        .plus-1 {
+            position: absolute;
+            margin: inherit;
+            top: 28%;
+            left: 49.25%;
+            width: 15px;
+            height: 62px;
+            background: #DC143C;
+        }
+
+        .plus-2 {
+            position: absolute;
+            margin: inherit;
+            top: 31%;
+            left: 47.7%;
+            width: 62px;
+            height: 15px;
+            background: #DC143C;
+        }
+
+        .band-1 {
+            position: absolute;
+            margin: inherit;
+            top: 18.89%;
+            left: 42.5%;
+            width: 18px;
+            height: 200px;
+            background: #DC143C;
+        }
+
+        .band-2 {
+            position: absolute;
+            margin: inherit;
+            top: 18.89%;
+            left: 55.5%;
+            width: 18px;
+            height: 200px;
+            background: #DC143C;
+        }
+
+        .buckle-1 {
+            position: absolute;
+            margin: inherit;
+            top: 23%;
+            left: 42.35%;
+            width: 15px;
+            height: 15px;
+            border: 5px solid #C0C0C0;
+        }
+
+        .shadow-2 {
+            position: absolute;
+            margin: inherit;
+            top: 26.5%;
+            left: 42.45%;
+            width: 20px;
+            height: 5px;
+            background: black;
+            opacity: 0.3;
+
+        }
+
+        .shadow-3 {
+            position: absolute;
+            margin: inherit;
+            top: 26.5%;
+            left: 55.5%;
+            width: 18px;
+            height: 5px;
+            background: black;
+            opacity: 0.3;
+
+        }
+
+        .buckle-2 {
+            position: absolute;
+            margin: inherit;
+            top: 23%;
+            left: 55.33%;
+            width: 15px;
+            height: 15px;
+            border: 5px solid #C0C0C0;
+        }
+
+        .bandage {
+            position: absolute;
+            margin: inherit;
+            top: 35%;
+            left: 55%;
+            width: 25px;
+            height: 65px;
+            border-radius: 10%;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 200;
+            transform: rotate(40deg);
+            background: #CD853F;
+        }
+
+        .shadow-4 {
+            position: absolute;
+            margin: inherit;
+            top: 36.5%;
+            left: 55%;
+            width: 25px;
+            height: 55px;
+            border-radius: 10%;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            transform: rotate(40deg);
+            background: black;
+            opacity: 0.3;
+
+        }
+
+        .small-top {
+            position: absolute;
+            margin: inherit;
+            top: 38.4%;
+            left: 55.3%;
+            width: 15px;
+            height: 15px;
+            border-top-right-radius: 2px;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            transform: rotate(40deg);
+            background: #DCAA79;
+            z-index: 200;
+        }
+
+        .shadow-1 {
+            position: absolute;
+            margin: inherit;
+            top: 46.1%;
+            left: 41.5%;
+            width: 250px;
+            height: 10px;
+            border-radius: 15%;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background: black;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    </style>
+    <div class="box"></div>
+    <div class="handle"></div>
+    <div class="bar-1"></div>
+    <div class="bar-2"></div>
+    <div class="plus-1"></div>
+    <div class="plus-2"></div>
+    <div class="band-1"></div>
+    <div class="band-2"></div>
+    <div class="buckle-1"></div>
+    <div class="buckle-2"></div>
+    <div class="bandage"></div>
+    <div class="small-top"></div>
+    <div class="shadow-1"></div>
+    <div class="shadow-2"></div>
+    <div class="shadow-3"></div>
+    <div class="shadow-4"></div>
+</body>
+
+</html>
