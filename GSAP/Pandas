@@ -1,0 +1,70 @@
+<!---------HTML--------->
+<div id="demo">
+<img class="bg" src="https://i.ibb.co/bR9NxPr/16617.jpg" alt="16617" border="0"width="500px" height="500px">
+<img class="title" src="https://i.ibb.co/zRpD2Fv/text.png" alt="text" border="0" width="500px">
+  <div id="pandas">
+
+ <img class="panda1" src="https://i.ibb.co/6NHZcz9/Untitled-1.png" alt="Untitled-1" border="0" width="110px" height="130px">
+   
+    <img src="https://i.ibb.co/dQVqPWL/panda1.png" alt="panda1" border="0" width="110px" height="125px">
+    <img src="https://i.ibb.co/mDWsgYw/panda4.png" alt="panda4" border="0" width="100px">
+    <img src="https://i.ibb.co/JQ5tSLr/panda2.png" alt="panda2" border="0" width="90px" height="140px">
+    <img src="https://i.ibb.co/6yw7yZ9/panda3.png" alt="panda3" border="0" width="110px"
+         >
+    
+</div>
+</div>
+<!----------HTML------------>
+
+
+/*----------CSS-------------/
+.bg{
+  position:absolute;
+  width:100%;
+  height:100vh;
+  z-index:-1;
+  
+}
+.title
+{
+  margin-top:5%;
+  margin-left:45%;
+}
+.panda1
+{
+  top:468px;
+  left:400px;
+}
+#pandas img
+{
+  position:absolute;
+  z-index:100;
+  
+}
+img:nth-child(2)
+{
+  top:470px;
+  left:550px;
+}
+img:nth-child(3)
+{
+  top:465px;
+  left:720px;
+}
+img:nth-child(4)
+{
+  top:455px;
+  left:900px;
+}
+img:nth-child(5)
+{
+  top:470px;
+  left:1050px;
+}
+/*--------------CSS---------------*/
+
+
+/*----------------JAVASCRIPT---------------*/
+gsap.from("#demo",{duration:1,opacity:0});
+gsap.from(".title",{duration:1,delay:1,opacity:0,scale:1,ease:"linear"});
+gsap.from("#pandas img",{duration:0.5,delay:2,scale:0,stagger:0.5,ease:"back"});
