@@ -1,3 +1,6 @@
+
+//TO PRINT TRAILING ZEROES WE HAVE TO COUNT THE NUMBER OF 5s IN THAT NUMBER BY DIVIDING IT BY (5)^n. where n goes from 1-n till 0 comes.
+
 #include <iostream>
 using namespace std;
 int findZeroes(int n)
