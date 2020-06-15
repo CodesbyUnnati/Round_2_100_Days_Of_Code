@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int findZeroes(int n)
+{
+  int ans=0;
+  for(int d=5;n/d>=1;d=d*5)
+  {
+    ans+=n/d;
+  }
+  cout<<"Trailing Zeroes:"<<endl;
+  return ans;
+}
+
+int main() {
+  long long int n;
+  cout<<"Enter number: ";
+  cin>>n;
+cout<<findZeroes(n);
+}
