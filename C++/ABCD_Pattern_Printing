@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+void printAbc(int n)
+{
+for(int i=1;i<=n;i++)
+{
+int count=n-i+1;
+char alphabet='A';
+for(int j=1;j<=count;j++)
+{
+cout<<alphabet;
+alphabet=alphabet+1;
+}
+}
+}
+int main()
+{
+int n;
+cin>>n;
+cout<<printAbc(n):
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
