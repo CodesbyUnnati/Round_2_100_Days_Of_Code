@@ -1,0 +1,41 @@
+#include <iostream>
+#include<climits>
+using namespace std;
+int main() {
+int largest=INT_MIN;
+int smallest=INT_MAX;
+int n,a[1000],i;
+cout<<"Enter the size of the array:";
+cin>>n;
+for(i=0;i<n;i++)
+{
+  cin>>a[i];
+  largest=max(largest,a[i]);
+  smallest=min(smallest,a[i]);
+ 
+}
+ cout<<"Largest is: "<<largest<<endl;
+  cout<<"Smallest is: "<<smallest<<endl;
+
+return 0;
+}
+
+
+
+/*--------INPUT
+6
+
+
+OUTPUT
+
+Enter the size of the array:6
+3
+2
+1 
+99
+5
+0
+Largest is: 99
+Smallest is: 0
+
+---------*/
