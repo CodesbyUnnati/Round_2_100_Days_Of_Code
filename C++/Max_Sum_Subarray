@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int left=-1;
+  int right=-1;
+  int max_sum=0;
+  int min_sum=0;
+  int n;
+  cout<<"Enter total numbers: ";
+  cin>>n;
+  int a[1000];
+  cout<<"Enter Array: ";
+  for(int i=0;i<n;i++)
+  {
+    cin>>a[i];
+  }
+  //GENERATING ARRAY
+for(int i=0;i<n;i++)
+{
+  for(int j=i;j<n;j++)
+  {
+    int current_sum=0;
+    for(int k=i;k<=j;k++)
+    {
+      current_sum+=a[k];
+    }
+      cout<<current_sum<<endl;
+      if(current_sum>max_sum)
+      {
+        max_sum=current_sum;
+        left=i;
+        right=j;
+      }
+    }
+  
+}
+cout<<"Maximum Sum is "<<max_sum;
+for(int k=right; k<=left;k++)
+{
+  cout<<a[k];
+  cout<<endl;
+}
+
+return 0;
+}
