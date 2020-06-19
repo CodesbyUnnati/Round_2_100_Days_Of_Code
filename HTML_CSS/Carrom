@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom Board</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #2680EB;
+        }
+
+        .mycanvas {
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .outer-board {
+            background-color: #D6B159;
+            height: 400px;
+            width: 400px;
+            position: relative;
+            top: 10px;
+            left: 20px;
+            border-radius: 10px;
+            border: 25px solid #29150C;
+        }
+
+        .inner-board {
+            background-color: transparent;
+            height: 392px;
+            width: 394px;
+            position: relative;
+            top: 0px;
+            left: 00px;
+            border: 5px solid #000;
+        }
+
+        .l1,
+        .l2,
+        .l3,
+        .l4 {
+            position: relative;
+            height: 40px;
+            width: 40px;
+            border-radius: 50px;
+            background: black;
+
+        }
+
+        .l1 {
+            top: -411px;
+            left: 49px;
+        }
+
+        .l2 {
+            top: -452px;
+            left: 405px;
+        }
+
+        .l3 {
+            top: -137px;
+            left: 49px;
+        }
+
+        .l4 {
+            top: -177px;
+            left: 405px;
+        }
+
+        .line-1,
+        .line-2,
+        .line-3,
+        .line-4 {
+            position: relative;
+            width: 200px;
+            height: 2px;
+            background: black;
+        }
+
+        .line-1 {
+            width: 250px;
+            top: -525px;
+            left: 120px;
+
+        }
+
+        .line-2 {
+            width: 250px;
+            top: -220px;
+            left: 110px;
+
+        }
+
+        .line-3 {
+            top: -375px;
+            width: 208px;
+            height: 1.5px;
+            left: -5px;
+            transform: rotate(270deg);
+        }
+
+        .line-4 {
+            top: -375px;
+            height: 1.5px;
+            width: 240px;
+            left: 278px;
+            transform: rotate(270deg);
+        }
+
+        .in-line-1,
+        .in-line-2,
+        .in-line-3,
+        .in-line-4 {
+            position: relative;
+            width: 250px;
+            height: 2px;
+            background: black;
+        }
+
+        .in-line-1 {
+            width: 230px;
+            top: -510px;
+            height: 1.5px;
+            left: 129px;
+        }
+
+        .in-line-2 {
+            width: 260px;
+            height: 1.5px;
+            top: -250px;
+            left: 110px;
+        }
+
+        .in-line-3 {
+            height: 1.5px;
+            width: 220px;
+            top: -385px;
+            left: 268px;
+            transform: rotate(270deg);
+        }
+
+        .in-line-4 {
+            width: 210px;
+            height: 1.5px;
+            top: -385px;
+            left: 17px;
+            transform: rotate(270deg);
+        }
+
+        .ball-line-1,
+        .ball-line-2,
+        .ball-line-3,
+        .ball-line-4 {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+            background-color: #B40501;
+        }
+
+        .ball-line-1 {
+            top: -538px;
+            left: 110px;
+        }
+
+        .ball-line-2 {
+            top: -280px;
+            left: 100px;
+
+        }
+
+        .ball-line-3 {
+            top: -305px;
+            left: 352px;
+        }
+
+        .ball-line-4 {
+            top: -615px;
+            left: 350px;
+
+        }
+
+        .ball-2-line-1,
+        .ball-2-line-2,
+        .ball-2-line-3,
+        .ball-2-line-4 {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+            background-color: #B40501;
+        }
+
+        .ball-2-line-1 {
+            top: -598px;
+            left: 98.5px;
+
+        }
+
+        .ball-2-line-2 {
+            top: -641px;
+            left: 375px;
+
+        }
+
+        .ball-2-line-3 {
+            top: -431px;
+            left: 375px;
+
+        }
+
+        .ball-2-line-4 {
+            top: -465px;
+            left: 98px;
+
+        }
+
+        .circle-1,
+        .circle-2,
+        .circle-3 {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            background: black;
+        }
+
+        .circle-1 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid black;
+            position: relative;
+            top: -660px;
+            left: 170px;
+        }
+
+        .circle-2 {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: transparent;
+            border: 10px solid #B40203;
+            position: relative;
+            top: -808px;
+            left: 178px;
+        }
+
+        .circle-3 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: transparent;
+            border: 5px solid black;
+            position: relative;
+            top: -932px;
+            left: 193px;
+        }
+
+        .goti-1,
+        .goti-2,
+        .goti-3,
+        .goti-4,
+        .goti-5,
+        .goti-6 {
+            postiton: relative;
+            width: 22px;
+            height: 22px;
+            border-radius: 50px;
+            background: white;
+        }
+
+        .goti-1 {
+            background: magenta;
+            border: 1.5px solid black;
+            top: -50px;
+            border-radius: 50%;
+            position: relative;
+            top: -1000px;
+            left: 235px;
+        }
+
+        .goti-2 {
+            background: #333;
+            border: 1.5px solid black;
+            top: -50px;
+            border-radius: 50%;
+            position: relative;
+            top: -1000px;
+            left: 235px;
+        }
+
+        .goti-3 {
+            background: #ddd;
+            border: 1.5px solid black;
+            top: -50px;
+            border-radius: 50%;
+            position: relative;
+            top: -1040px;
+            left: 258px;
+        }
+
+        .goti-4 {
+            background: #333;
+            border: 1.5px solid black;
+            top: -50px;
+            border-radius: 50%;
+            position: relative;
+            top: -1091px;
+            left: 255px;
+        }
+
+        .goti-5 {
+            background: #eee;
+            border: 1.5px solid black;
+            top: -50px;
+            border-radius: 50%;
+            position: relative;
+            top: -1091px;
+            left: 212px;
+        }
+
+        .goti-6 {
+            background: #333;
+            border: 1.5px solid black;
+            top: -50px;
+            border-radius: 50%;
+            position: relative;
+            top: -1141px;
+            left: 215px;
+        }
+
+        .goti-7 {
+            background: #eee;
+            width: 23px;
+            height: 23px;
+            border: 1.5px solid black;
+            border-radius: 50%;
+            position: relative;
+            top: -1182px;
+            left: 235px;
+        }
+
+        .striker {
+            background: orange;
+            width: 30px;
+            height: 30px;
+            border: 3px solid black;
+            border-radius: 50%;
+            position: relative;
+            top: -1040px;
+            left: 235px;
+        }
+    </style>
+    <div class="mycanvas">
+        <div class="outer-board">
+            <div class="inner-board"></div>
+        </div>
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+        <div class="l4"></div>
+
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+        <div class="line-4"></div>
+
+        <div class="in-line-1"></div>
+        <div class="in-line-2"></div>
+        <div class="in-line-3"></div>
+        <div class="in-line-4"></div>
+
+        <div class="ball-line-1"></div>
+        <div class="ball-line-2"></div>
+        <div class="ball-line-3"></div>
+        <div class="ball-line-4"></div>
+
+
+        <div class="ball-2-line-1"></div>
+        <div class="ball-2-line-2"></div>
+        <div class="ball-2-line-3"></div>
+        <div class="ball-2-line-4"></div>
+
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+
+        <div class="goti-1"></div>
+        <div class="goti-2"></div>
+        <div class="goti-3"></div>
+        <div class="goti-4"></div>
+        <div class="goti-5"></div>
+        <div class="goti-6"></div>
+        <div class="goti-7"></div>
+
+        <div class="striker"></div>
+
+
+    </div>
+
+
+</body>
+
+</html>
