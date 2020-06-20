@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: #5BCAF1;
+        }
+
+        .container,
+        .balloon,
+        .balloon::after,
+        .balloon::before,
+        .basket,
+        .basket::before,
+        .string,
+        .sun,
+        .cloud,
+        .cloud::after,
+        .cloud::before {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .container {
+            height: 500px;
+            width: 500px;
+            background-color: #F8D54A;
+            border-radius: 50%;
+        }
+
+        .balloon {
+            height: 300px;
+            width: 280px;
+            border-radius: 50%;
+            top: -135px;
+            background-color: #E24A3B;
+            border: 1px solid black;
+            animation: float 2s ease-in-out infinite;
+
+
+
+        }
+
+        .balloon::before {
+            content: '';
+            height: 300px;
+            width: 190px;
+            border: 1px solid black;
+            background-color: #FFF;
+            border-radius: 50%;
+        }
+
+        .balloon::after {
+            content: '';
+            height: 300px;
+            width: 60px;
+            background-color: #E24A3B;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        .basket {
+            height: 55px;
+            width: 65px;
+            background-color: #B37F44;
+            border-radius: 4px;
+            top: 300px;
+            border: 1px solid black;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .basket::before {
+            content: '';
+            background-color: #B37F44;
+            height: 10px;
+            width: 75px;
+            top: -60px;
+            left: -5px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+
+        .string {
+            height: 50px;
+            width: 8px;
+            background-color: #B37F44;
+            border: 1px solid black;
+            top: 200px;
+            left: 60px;
+            animation: float-strings 2s ease-in-out infinite;
+
+        }
+
+        .string.right {
+            transform: rotate(20deg);
+        }
+
+        .string.left {
+            transform: rotate(-20deg);
+            left: -60px;
+        }
+
+        .sun {
+            height: 100px;
+            width: 100px;
+            background: orange;
+            border-radius: 50%;
+            top: 100px;
+            left: -480px;
+        }
+
+        .moon {
+            display: none;
+            height: 80px;
+            width: 80px;
+            background: #eee;
+            border-radius: 50%;
+            top: 100px;
+            left: 50px;
+        }
+
+        .cloud {
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .cloud.bottom-right {
+            height: 40px;
+            width: 100px;
+            top: 250px;
+            left: 400px;
+        }
+
+        .cloud.bottom-right::after {
+            content: '';
+            background-color: white;
+            height: 50px;
+            width: 60px;
+            border-radius: 50%;
+            top: -15px;
+            left: 20px;
+        }
+
+        .cloud.top-right {
+            height: 40px;
+            width: 100px;
+            top: -150px;
+            left: 420px;
+        }
+
+        .cloud.top-right::after {
+            content: '';
+            background-color: white;
+            height: 50px;
+            width: 60px;
+            border-radius: 50%;
+            top: -15px;
+            left: 20px;
+        }
+
+        .cloud.bottom-left {
+            height: 40px;
+            width: 140px;
+            top: 170px;
+            left: -480px;
+        }
+
+        .cloud.bottom-left::before {
+            content: '';
+            background-color: white;
+            height: 50px;
+            width: 60px;
+            border-radius: 50%;
+            top: -30px;
+            left: 45px;
+            z-index: 100;
+        }
+
+        .cloud.bottom-left::after {
+            content: '';
+            background-color: white;
+            height: 50px;
+            width: 60px;
+            border-radius: 50%;
+            top: -15px;
+            left: -34px;
+            z-index: 100;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(-2deg);
+            }
+        }
+
+        @keyframes float-strings {
+
+            0%,
+            100% {
+                top: 200px;
+            }
+
+            50% {
+                top: 175px;
+            }
+        }
+    </style>
+    <div class="container">
+
+        <div class="balloon"></div>
+        <div class="string left"></div>
+        <div class="string right"></div>
+        <div class="basket"></div>
+
+        <div class="sun"></div>
+        <div class="cloud bottom-right"></div>
+        <div class="cloud top-right"></div>
+        <div class="cloud bottom-left"></div>
+        <div class="moon">
+            <div>
+            </div>
+</body>
+
+</html>
