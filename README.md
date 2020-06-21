@@ -9,10 +9,11 @@
   <li>Then about 2 weeks later, I started doing some <b>CSS Art</b> for improving my Web Designing Skills.</li>
   <br>
   <b>**************HERE ARE SOME OF MY DESIGNS**********</b>
+  <br>
   
   <b>THE SMILEY</B>
   <ol><img src="https://i.ibb.co/z4tqYjY/smiley.png" alt="smiley" border="0"></ol>
-  <br>
+  
   
   <b>THE LIPSTICK</b>
   <img src="https://i.ibb.co/bJrgHLm/lipstick.png" alt="lipstick" border="0">
