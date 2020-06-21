@@ -16,7 +16,7 @@
   
   
   <b>THE LIPSTICK</b>
-  <img src="https://i.ibb.co/bJrgHLm/lipstick.png" alt="lipstick" border="0">
+ <ol> <img src="https://i.ibb.co/bJrgHLm/lipstick.png" alt="lipstick" border="0"></ol>
   <br>
   
   
