@@ -3,6 +3,5 @@
   
  <i> This Readme file consists of  my journey of #100DaysOfCode Challenge.I will be discussing about my progress here.<i>
   
-  <br>
 
   <li><ul>For about one week, I did basic C++ Programmes, along with some basic Data Structure Problems.</ul></li>
