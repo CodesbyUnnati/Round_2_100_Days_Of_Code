@@ -10,4 +10,15 @@
   <br>
   <b>**************HERE ARE SOME OF MY DESIGNS**********</b>
   
+  <b>THE SMILEY</B>
   <ol><img src="https://i.ibb.co/z4tqYjY/smiley.png" alt="smiley" border="0"></ol>
+  <br>
+  
+  <b>THE LIPSTICK</b>
+  <img src="https://i.ibb.co/bJrgHLm/lipstick.png" alt="lipstick" border="0">
+  <br>
+  
+  
+  <b>THE WATER FILLING CUP</b>
+  <i>THIS VIDEO HAS MORE THAN 14K VIEWS ON TWITTER😍</i>
+  <video src="https://vimeo.com/user118148589/review/431188881/34f27c9af0"></video>
