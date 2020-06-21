@@ -18,9 +18,27 @@
   <b>THE LIPSTICK	💄</b>
  <ol> <img src="https://i.ibb.co/bJrgHLm/lipstick.png" alt="lipstick" border="0"></ol>
   <br>
-  <br>
+  
+<b>FIRST AID BOX</b>
+<br>
+<ol><img src="https://i.ibb.co/68R0nx9/First-aid.png" alt="First-aid" border="0"></ol>
+<br>
+
+
+<b>LOLLIPOP</b>
+<br>
+<ol><img src="https://i.ibb.co/hVqhq9R/lollipop.png" alt="lollipop" border="0"></ol>
+<br>
+
+<b>CAT</b>
+<br>
+<ol><img src="https://i.ibb.co/ZYdhP8j/cat.png" alt="cat" border="0"></ol>
+<br>
+<br>
   
   <b>SOME ANIMATIONS</B>
+  <br>
+  <br>
   
   <b>THE WATER FILLING CUP</b>
   <i>(THIS ANIMATION HAS MORE THAN 14K VIEWS ON TWITTER😍)</i>
@@ -40,22 +58,6 @@
 <ol><img src="https://i.ibb.co/qxM6hz9/ship.png" alt="ship" border="0"></ol>
 <br>
 
-
-<b>FIRST AID BOX</b>
-<br>
-<ol><img src="https://i.ibb.co/68R0nx9/First-aid.png" alt="First-aid" border="0"></ol>
-<br>
-
-
-<b>LOLLIPOP</b>
-<br>
-<ol><img src="https://i.ibb.co/hVqhq9R/lollipop.png" alt="lollipop" border="0"></ol>
-<br>
-
-<b>CAT</b>
-<br>
-<ol><img src="https://i.ibb.co/ZYdhP8j/cat.png" alt="cat" border="0"></ol>
-<br>
 
 <b> MELTING CHEESE HAMBURGER</b>
 <br>
