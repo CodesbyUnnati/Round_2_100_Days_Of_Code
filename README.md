@@ -4,4 +4,4 @@
  <i> This Readme file consists of  my journey of #100DaysOfCode Challenge.I will be discussing about my progress here.<i>
   
 
-  -For about one week, I did basic C++ Programmes, along with some basic Data Structure Problems.
+  <li>For about one week, I did basic C++ Programmes, along with some basic Data Structure Problems.<li>
