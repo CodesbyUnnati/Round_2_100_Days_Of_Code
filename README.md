@@ -8,4 +8,6 @@
   <br>
   <li>Then about 2 weeks later, I started doing some <b>CSS Art</b> for improving my Web Designing Skills.</li>
   <br>
-  <li><b>HERE ARE SOME OF MY DESIGNS</b></li>
+  <b>**************HERE ARE SOME OF MY DESIGNS**********</b>
+  
+  <ol><img src="https://i.ibb.co/z4tqYjY/smiley.png" alt="smiley" border="0"></ol>
