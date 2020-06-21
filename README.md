@@ -18,7 +18,9 @@
   <b>THE LIPSTICK</b>
  <ol> <img src="https://i.ibb.co/bJrgHLm/lipstick.png" alt="lipstick" border="0"></ol>
   <br>
+  <br>
   
+  <b>SOME ANIMATIONS</B>
   
   <b>THE WATER FILLING CUP</b>
   <i>(THIS ANIMATION HAS MORE THAN 14K VIEWS ON TWITTER😍)</i>
@@ -27,3 +29,6 @@
 <ol><img src="https://i.ibb.co/pjXsS2v/cup.png" alt="cup" border="0"></ol>
 <br>
 
+<b>THE ROBOT🤖</b>
+<a href="https://vimeo.com/user118148589/review/431191693/e41b82b9be">SEE HERE</a>
+<ol><img src="https://i.ibb.co/zmPr6zM/robo.png" alt="robo" border="0"></ol>
