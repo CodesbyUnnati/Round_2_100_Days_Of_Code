@@ -1,0 +1,92 @@
+<!--HTML-->
+
+
+<div class="box">
+  <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4"></div>
+
+</div>
+  <h1>LOADING</h1>
+  
+  
+  <!--HTML-->
+  
+  /*CSS*/
+  
+  @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+body
+{
+  background:black;
+}
+.box-1
+{
+margin:10px;
+  width:40px;
+  height:40px;
+  background:red;
+    border-radius:50px;
+  
+}
+.box-2
+{
+ margin:10px;
+  width:40px;
+  height:40px;
+  background:yellow;
+    border-radius:50px;
+ 
+}
+.box-3
+{
+ margin:10px;
+  width:40px;
+  height:40px;
+  background:blue;
+    border-radius:50px;
+ 
+}
+.box-4
+{
+margin:10px;
+  width:40px;
+  height:40px;
+  background:green;
+    border-radius:50px;
+}
+.box
+{
+  margin-top:20%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+h1
+{
+  margin-top:5%;
+  display:flex;
+  color:white;
+  justify-content:center;
+  align-items:center;
+  font-family: 'MuseoModerno', cursive;
+  font-weight:800;
+}
+ 
+    /*CSS*/
+  
+  
+  
+  //GSAP
+  
+  gsap.to(".box-1",{y:-60})
+gsap.to(".box-1",{y:0,delay:0.5})
+gsap.to(".box-2",{y:-55,delay:0.5})
+gsap.to(".box-2",{y:0,delay:1})
+gsap.to(".box-3",{y:-75,delay:1})
+gsap.to(".box-3",{y:0,delay:1.5})
+gsap.to(".box-4",{y:-95,delay:1.5})
+gsap.to(".box-4",{y:0,delay:2})
+    
