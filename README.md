@@ -102,6 +102,7 @@
 
 <i>I tried some <b>Greensock Animations</b></i>
 <br>
+<br>
 <b>ROTATING FRED</b>
 <a href="">SEE HERE</a>
 <br>
@@ -117,9 +118,9 @@
 
 <b>WHO TEASED ME!</b>
 <br>
-<a href="">SEE HERE</a>
+<a href="https://vimeo.com/user118148589/review/431196424/eb0ebe1cab">SEE HERE</a>
 <br>
-<ol><img src="https://i.ibb.co/qxwNgQZ/Carrom.png" alt="Carrom" border="0"></ol>
+<ol><img src="https://i.ibb.co/Bc0sp0m/ol.png" alt="ol" border="0"></ol>
 <br>
 
 <b>CARROM BOARD ANIMATION</b>
