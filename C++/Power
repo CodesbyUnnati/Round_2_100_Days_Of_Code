@@ -1,0 +1,24 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+  double power(double base,int exp)
+  {
+    int result=1;
+    for(int i=0;i<exp;i++)
+    {
+      result=result*base;
+    }
+    return result;
+  }
+int main() {
+  int b,p;
+  cout<<"Enter base: ";
+  cin>>b;
+  cout<<"Enter Power: ";
+  cin>>p;
+cout<<"Power is "<<power(b,p);
+
+
+  return 0;
+}
