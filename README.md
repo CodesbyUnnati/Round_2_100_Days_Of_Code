@@ -144,3 +144,8 @@
   <a href="https://vimeo.com/user118148589/review/431198662/6dbac3022e">SEE HERE</a>
 <br>
 <ol><img src="https://i.ibb.co/dcvMMvN/loader.png" alt="loader" border="0"></ol>
+<br>
+
+<b>CSS GRADIENT</b>
+<br>
+<ol><img src="https://i.ibb.co/TmkfMqp/gradient.png" alt="gradient" border="0"></ol>
