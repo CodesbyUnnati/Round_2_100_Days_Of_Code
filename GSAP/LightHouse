@@ -1,0 +1,427 @@
+<!------HTML--------->
+
+  <div class="sea">
+    <div class="bottom">
+    </div>
+    <div class="bottom-2">
+    </div>
+    <div class="lighthouse">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+     <div class="line"></div>
+       <div class="line"></div>
+     <div class="line"></div>
+      <div class="line"></div>
+       <div class="line"></div>
+      <div class="line"></div>
+      <div class="light"></div>
+    </div>
+  </div>
+  <div class="waves">
+</div>
+
+
+<div class="sun"></div>
+<div class="moon"></div>
+  <div class="container">
+    <canvas></canvas>
+    <svg id="ship" viewBox="0 0 21000 29700">
+      <g>
+        <polygon class="grey" points="3141,16981 17420,16981 15003,23697 5557,23697 " />
+        <polygon class="pink" points="17420,16981 3141,16981 3375,17684 17185,17684 " />
+        <rect class="pink" x="10002" y="3572" width="556" height="13409" />
+        <polygon class="grey" points="10558,3572 17420,15838 10558,15838 " />
+        <polygon class="pink" points="10558,15838 17420,15838 16562,14305 10558,14305 " />
+        <polygon class="pink" points="10558,12771 15704,12771 14847,11238 10558,11238 " />
+        <polygon class="pink" points="10558,9705 13989,9705 13131,8172 10558,8172 " />
+        <polygon class="pink" points="10558,6638 12274,6638 11416,5105 10558,5105 " />
+      </g>
+    </svg>
+  </div>
+
+<!-----------HTML------------>
+
+
+
+/*----------CSS--------------*/
+
+.sea
+{  position: absolute;
+            margin: auto;
+            top: -10%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+  top:70%;
+   width:100vw;
+  height:40vh;
+  
+ background:linear-gradient(#25BBC6,white);
+}
+  * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #f6f8fc 0%, #94dfff 60%);
+    }
+
+    .container {
+      top:60%;
+      position: relative;
+      width: 100%;
+      height: 50%;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+      opacity:0.4;
+      position: absolute;
+     
+    }
+
+    .grey {
+      fill: #E6E6E6;
+    }
+
+    .pink {
+      fill: #FF6666;
+    }
+
+    #ship {
+      width: 7%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: -10%;
+    }
+.bottom
+{
+  position:absolute;
+  display:flex;
+  top:0%;
+  bottom:100%;
+  left:0;
+  right:0;
+  margin:auto;
+  width:250px;
+  height:20px;
+  border-radius:20px;
+  background: #9DDB66;
+}
+.bottom-2
+{
+  position:absolute;
+  display:flex;
+  top:-10%;
+  bottom:100%;
+  left:0;
+  right:0;
+  margin:auto;
+  width:180px;
+  height:25px;
+  z-index:-1;
+  border-radius:5px;
+  background: #71C256;
+}
+.lighthouse
+{
+  justify-content:center;
+  margin:auto;
+  position:absolute;
+   border-bottom: 130px solid  #E03F01;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            height: 0;
+  border-radius:20px;
+            width: 40px;
+  top:-50%;
+  left:47.5%;  
+}
+.line
+{
+  position:absolute;
+  top:88px;
+  width:75px;
+  height:10px;
+  left:-18px;
+  border-radius:20px;
+  overflow:hidden;
+  background:white;
+}
+.line:nth-child(2)
+{
+  position:absolute;
+  top:40px;
+  width:60px;
+  height:10px;
+  left:-10px;
+  border-radius:20px;
+  background:white;
+}
+.line:nth-child(3)
+{
+  position:absolute;
+  top:-10px;
+  width:41px;
+  height:10px;
+  left:-1px;
+  border-radius:20px;
+  overflow:hidden;
+  background:white;
+}
+.line:nth-child(4)
+{
+  position:absolute;
+  top:60px;
+  width:15px;
+  height:15px;
+  left:12px;
+  border-radius:50px;
+  overflow:hidden;
+  background:#963F2D;
+}
+.line:nth-child(5)
+{
+  position:absolute;
+  top:-10px;
+  width:41px;
+  height:20px;
+  left:-1px;
+  border-radius:20px;
+  overflow:hidden;
+  background:white;
+}
+.line:nth-child(6)
+{
+  position:absolute;
+  top:-40px;
+  width:15px;
+  height:30px;
+  left:9px;
+  border-radius:1px;
+  overflow:hidden;
+  z-index:1;
+  background:#963F2D;
+}
+.line:nth-child(7)
+{
+  position:absolute;
+  top:-40px;
+  width:15px;
+  height:10px;
+  left:20px;
+   z-index:1;
+  border-radius:3px;
+  overflow:hidden;
+  background:#963F2D;
+}
+.light
+{
+  position:absolute;
+   border-bottom: 130px solid #E9E392;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            height: 0;
+  border-radius:10px;
+            width: 10px;
+  transform:rotate(270deg);
+  top:-100px;
+  left:30px;  
+}
+
+
+
+.sun {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: yellow;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  box-shadow: 0 0 100px 0 yellow;
+}
+
+.sun {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: yellow;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  box-shadow: 0 0 100px 0 yellow;
+}
+.moon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  box-shadow: 0 0 100px 0 #eee;
+}
+
+
+/*------------CSS--------------*/
+
+
+
+/*----------JS + GSAP-------------*/
+
+gsap.to('.sun',{y:800,delay:6});
+gsap.to('.sea',{background:"#194168",delay:7});
+gsap.to('body',{background:"#346EF3",delay:8});
+
+gsap.to('.moon',{x:200,delay:8.5,background:"white"});
+
+(function () {
+  var WATER_TOP_COLOR = "#04619f";
+  var WATER_BOTTOM_COLOR = "#000000";
+
+  var htmlCanvas = document.querySelector("canvas");
+  var ctx = htmlCanvas.getContext('2d')
+  var ship = window.document.querySelector('#ship');
+  var container = document.querySelector(".container");
+
+  var screenWidth;
+  var screenHeight;
+
+  var wave = {};
+  var waveLength = 0;
+  var wave2 = {};
+  var wave3 = {};
+  var waves = {};
+  var shipComputed;
+
+  var moveWavesId;
+  var moveShipId;
+
+  function value(x, width, numberOfWaves) {
+    x = x * numberOfWaves / width * 2 * Math.PI;
+    return Math.sin(x);
+  }
+
+  function multiplier(x, width) {
+    var multiplierVar = 90;
+
+    if (x <= width / 2) {
+      return x * multiplierVar * 2 / width;
+    }
+    return width * multiplierVar / 2 / x;
+  }
+
+  function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, screenWidth, screenHeight);
+    ctx.beginPath();
+    ctx.moveTo(screenWidth, screenHeight);
+
+    for (var x = waveLength - 1; x > 0; x--) {
+      ctx.lineTo(x, waves[x])
+    }
+
+    var gradient = ctx.createLinearGradient(0, 0, 0, screenHeight);
+    gradient.addColorStop(.5, WATER_TOP_COLOR);
+    gradient.addColorStop(1, WATER_BOTTOM_COLOR);
+    ctx.fillStyle = gradient;
+    ctx.lineTo(0, screenHeight);
+    ctx.fill();
+
+    requestAnimationFrame(draw);
+  }
+
+  function moveShip() {
+    var y1 = waves[shipComputed.left];
+    var y2 = waves[shipComputed.left + 1];
+
+    shipComputed.angle = -Math.atan(y1 - y2) + 'rad';
+    shipComputed.top = y1;
+    shipComputed.left += 1;
+    if (shipComputed.left > screenWidth - 1) {
+      shipComputed.left = -10;
+    }
+
+    ship.style.transform = 'rotate(' + shipComputed.angle + ')';
+    ship.style.left = shipComputed.left - (screenWidth * shipComputed.widthScreenWidthPercent / 2) + 'px';
+    ship.style.top = shipComputed.top - (screenWidth * shipComputed.widthScreenWidthPercent) + 'px';
+  }
+
+  function initializeWaves() {
+    var randomWaves1 = randomIntFromInterval(4, 5);
+    var randomWaves2 = randomIntFromInterval(2, 3);
+    var randomWaves3 = randomIntFromInterval(6, 7);
+
+    for (var x = 0; x < screenWidth; x++) {
+      wave[x] = value(x, screenWidth, randomWaves1) * multiplier(x, screenWidth) / 4;
+      wave2[x] = value(x, screenWidth, randomWaves2) * multiplier(x * 3, screenWidth) / 6;
+      wave3[x] = value(x, screenWidth, randomWaves3);
+    }
+    waveLength = Object.keys(wave).length;
+  }
+
+  function moveWaves() {
+    if (!waveLength) {
+      initializeWaves();
+    }
+
+    for (var x = waveLength - 1; x >= 0; x--) {
+      if (x === 0) {
+        wave2[x] = wave2[waveLength - 1];
+        wave3[x] = wave3[waveLength - 1];
+      } else {
+        wave2[x] = wave2[x - 1];
+        wave3[x] = wave3[x - 1];
+      }
+
+      waves[x] = wave[x] + wave2[x] + wave3[x] + screenHeight / 2;
+    }
+  }
+
+  function startLoop() {
+    clearInterval(moveWavesId);
+    moveWavesId = setInterval(moveWaves, 8000 / screenWidth);
+
+    clearInterval(moveShipId);
+    moveShipId = setInterval(moveShip, 10000 / screenWidth);
+  }
+
+  function recalculateCanvas() {
+    var containerInfo = container.getBoundingClientRect();
+    screenWidth = containerInfo.width;
+    screenHeight = containerInfo.height;
+    htmlCanvas.width = screenWidth;
+    htmlCanvas.height = screenHeight;
+
+    wave = {};
+    wave2 = {};
+    wave3 = {};
+    waveLength = 0;
+    waves = {};
+
+    shipComputed = {
+      top: screenHeight / 2,
+      left: -10,
+      widthScreenWidthPercent: 0.07,
+    };
+
+    startLoop();
+  }
+
+  window.addEventListener('resize', recalculateCanvas);
+  window.addEventListener('orientationchange', recalculateCanvas);
+  window.removeEventListener("unload", recalculateCanvas);
+
+  recalculateCanvas();
+  requestAnimationFrame(draw);
+}());
