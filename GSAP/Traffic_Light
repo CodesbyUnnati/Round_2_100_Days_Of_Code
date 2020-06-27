@@ -1,0 +1,154 @@
+<!----------HTML--------------->
+
+<div class="trafficlight">
+  <div class="stand"></div>
+  <div class="protector"></div>
+  <div class="protector"></div>
+    <div class="protector"></div>
+  <div class="red"></div>
+  <div class="yellow"></div>
+  <div class="green"></div>
+  <div class="bottom"></div>
+</div>
+
+<!----------HTML--------------->
+
+
+/*-----------CSS------------*/
+
+body{
+  width:100vw;
+  height:100vh;
+background: linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%);
+}
+.trafficlight
+{
+  
+    position:absolute;
+  top:10%;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:0 auto;
+  width:140px;
+  height:350px;
+  background:#222;
+  border:5px solid grey;
+  border-radius:20px;
+}
+.stand
+{
+  position:absolute;
+  top:100%;
+  margin:0px 48px;
+  width:40px;
+  height:300px;
+  background:linear-gradient(-90deg, #222 0%, #444 30%, #000);
+}
+.protector
+{
+   background: transparent;
+  width: 150px;
+  height: 0;
+  position: absolute;
+  top: 20px;
+  left: -35px;
+  border-right: solid 30px transparent;
+  border-left: solid 30px transparent;
+  border-top: solid 90px #222;
+  border-radius: 10px;
+  z-index: -1;
+}
+.protector:nth-child(2)
+{
+  top:120px;
+}
+.protector:nth-child(3)
+{
+  top:220px;
+}
+
+.red
+{
+  position:absolute;
+  left:0;
+  right:0;
+  margin:25px auto;
+  width:70px;
+  opacity:0.2;
+    background-image: radial-gradient(red, transparent);
+  height:70px;
+  border-radius:50px;
+  border:2px dotted red;
+    box-shadow: 
+    0 0 20px #B81313 inset,
+    0 0 10px red;
+}
+
+.yellow
+{
+  position:absolute;
+  left:0;
+  right:0;
+  margin:125px auto;
+  width:70px;
+  height:70px;
+  border-radius:50px;
+  opacity:0.2;
+    background-image: radial-gradient(yellow, transparent);
+  border:2px dotted yellow;
+      box-shadow: 
+    0 0 20px #FEEC00 inset,
+    0 0 10px yellow;
+}
+
+
+.green
+{
+ 
+  position:absolute;
+  left:0;
+  right:0;
+  margin:230px auto;
+  width:70px;
+  height:70px;
+    background-image: radial-gradient(green, transparent);
+  opacity:0.2;
+  border-radius:50px;
+  border:2px dotted green;
+     box-shadow: 
+    0 0 20px #01AF01 inset,
+    0 0 10px green;
+}
+.bottom
+{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width:150px;
+  height:60px;
+  margin:600px -5px;
+  border-radius:10px;
+  background:#222;
+}
+
+
+/*-----------CSS------------*/
+
+
+
+/*------------GSAP----------------*/
+
+
+gsap.to('.red',{opacity:1,delay:4,scale:1.1});
+gsap.to('.red',{opacity:0.2,delay:10,scale:1});
+gsap.to('.yellow',{opacity:1,delay:6,scale:1.1});
+gsap.to('.yellow',{opacity:0.2,delay:10,scale:1});
+gsap.to('.green',{opacity:1,delay:10.5,scale:1.1});
+gsap.to('.green',{opacity:0.2,delay:13,scale:1});
+gsap.to('.red,.yellow,.green',{opacity:1,delay:15,scale:1.1});
+
+
+/*------------GSAP----------------*/
