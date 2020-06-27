@@ -165,3 +165,5 @@
 <br>
 <b>🚦TRAFFIC LIGHT🚦</b>
 <br>
+<ol><img src="https://i.ibb.co/8P94wvp/traffic.png" alt="traffic" border="0"></ol>
+<br>
