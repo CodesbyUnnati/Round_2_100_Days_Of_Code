@@ -1,0 +1,128 @@
+<!--------HTML------------->
+ <div class="calendar">
+        <p id="monthName"></p>
+        <p id="dayName"></p>
+        <p id="dayNumber"></p>
+        <p id="year"></p>
+        <p id="hours"></p><span id="minutes"></span>
+        <div class="dots"></div>
+        <div class="dots"></div>
+    </div>
+    <script>
+        const lang = navigator.language;
+        let date = new Date();
+
+        let dayNumber = date.getDate();
+        let month = date.getMonth();
+        let dayName = date.toLocaleString(lang, {
+            weekday: 'long'
+        });
+        let monthName = date.toLocaleString(lang, {
+            month: 'long'
+        });
+        let year = date.getFullYear();
+        let hour=date.getHours();
+        let minutes=date.getMinutes();
+
+        document.getElementById('monthName').innerHTML = monthName;
+        document.getElementById('dayName').innerHTML = dayName;
+        document.getElementById('dayNumber').innerHTML = dayNumber;
+        document.getElementById('year').innerHTML = year;
+        document.getElementById('hours').innerHTML=hour;
+        document.getElementById('minutes').innerHTML=minutes;
+    </script>
+<!--------HTML------------>
+
+
+/*----------CSS----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #163C52 0%,#4F4F47 30%,#C5752D 60%,#B7490F 80%, #2F1107 100%);
+}
+
+.calendar {
+    position: relative;
+    width: 200px;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+}
+
+.calendar #monthName {
+    position: relative;
+    padding: 15px 10px;
+    background-color: #515074;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.calendar #dayName {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #888;
+}
+
+.calendar #dayNumber {
+    margin-top: 0px;
+    line-height: 1em;
+    font-size: 80px;
+    font-weight: 700;
+    color: #333;
+}
+
+.calendar #year {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #888;
+}
+.calendar #hours
+{
+      margin-top: -5px;
+      line-height: 1em;
+      font-size: 30px;
+      font-weight: 700;
+      float: left;
+      margin-left: 58px;
+      margin-bottom: 20px;
+      color: #333;
+}
+.calendar #minutes {
+    margin-top: -5px;
+    line-height: 1em;
+    font-size: 30px;
+    font-weight: 700;
+    float: left;
+    margin-left: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.dots
+{
+    width: 5px;
+
+    height: 5px;
+    border-radius: 50px;
+    background: #333;
+    z-index: 100;
+    margin-left: 98px;
+    margin-top: 10px;
+}
