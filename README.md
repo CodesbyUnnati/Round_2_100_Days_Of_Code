@@ -178,3 +178,9 @@
   <a href="https://vimeo.com/user118148589/review/435051364/3d7d879d6b">See Here</a>
   <br>
   <ol><img src="https://i.ibb.co/n1myz7B/crate.png" alt="crate" border="0"></ol>
+<br>
+  <b>THE GALAXY</b>
+  <br>
+  <a href="https://vimeo.com/user118148589/review/435348811/5d1e769caf">SEE HERE</a>
+  <br>
+  <ol><img src="https://i.ibb.co/N2xVcLf/galaxy.png" alt="galaxy" border="0"></ol>
