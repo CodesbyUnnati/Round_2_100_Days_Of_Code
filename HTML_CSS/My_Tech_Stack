@@ -1,0 +1,164 @@
+<!--HTML-->
+<h1>My Tech Stack</h1>
+<div class="container">
+         <div id="cube">
+           <div class="front"><img src='https://svgshare.com/i/MiB.svg' title='html' width="100%"></div>
+           <div class="back"><img src='https://svgshare.com/i/Mgn.svg' title='css'width="100%"></div>
+           <div class="right"><img src='https://svgshare.com/i/MiM.svg' title='js' width="100%"></div>
+           <div class="left"><img src='https://svgshare.com/i/MiX.svg' title='github' width="100%"></div>
+           <div class="top"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="80%"> </div>
+           <div class="bottom"><img src="https://i.ibb.co/6rD3Vm5/greensock.png" alt="greensock" border="0" width="90%"></div>
+         </div>
+       </div>
+          </div>
+        </div>
+        
+        
+        /*---CSS------*/
+        body
+{
+  background:pink;
+}
+h1{
+  font-weight:800;
+  font-size:5rem;
+  font-family:Cursive;
+  justify-content:center;
+  text-align:center;
+}
+.container {
+  width: 200px;
+  height: 200px;
+ margin:25% 50%;
+  position: relative;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+}
+
+#cube {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: rotatecube 10s infinite;
+
+  -moz-transform-style: preserve-3d;
+  -moz-animation: rotatecube 10s infinite;
+}
+
+#cube div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  border: none;
+  line-height: 200px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@-webkit-keyframes rotatecube {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(90deg);
+  }
+
+  25% {
+    -webkit-transform: rotateX(90deg) rotateY(270deg) rotateZ(180deg);
+  }
+
+  50% {
+    -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg);
+  }
+
+  75% {
+    -webkit-transform: rotateX(270deg) rotateY(90deg) rotateZ(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(0deg) rotateZ(270deg);
+  }
+}
+
+@-moz-keyframes rotatecube {
+  0% {
+    -moz-transform: rotateX(0deg) rotateY(360deg) rotateZ(90deg);
+  }
+
+  25% {
+    -moz-transform: rotateX(90deg) rotateY(270deg) rotateZ(180deg);
+  }
+
+  50% {
+    -moz-transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg);
+  }
+
+  75% {
+    -moz-transform: rotateX(270deg) rotateY(90deg) rotateZ(360deg);
+  }
+
+  100% {
+    -moz-transform: rotateX(360deg) rotateY(0deg) rotateZ(270deg);
+  }
+}
+
+.front {
+  background: #FF5722;
+  
+  
+}
+
+.back {
+  background: transparent;
+}
+
+.right {
+  background:#F0DB4F;
+}
+
+.left {
+  background:#fff;
+ 
+}
+
+.top {
+  background: #2A80B9;
+}
+
+.bottom {
+  background: #000;
+  
+}
+
+#cube .front {
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+  -moz-transform: rotateY(0deg) translateZ(100px);
+}
+
+#cube .back {
+  -webkit-transform: rotateX(180deg) translateZ(100px);
+  -moz-transform: rotateX(180deg) translateZ(100px);
+}
+
+#cube .right {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube .left {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube .top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateX(90deg) translateZ(100px);
+}
+
+#cube .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+  -moz-transform: rotateX(-90deg) translateZ(100px);
+}
+
+        
