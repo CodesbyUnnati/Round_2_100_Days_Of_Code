@@ -185,3 +185,8 @@
   <br>
 
   <ol><img src="https://i.ibb.co/WFTcnxk/galaxy.png" alt="galaxy" border="0"></ol>
+<br>
+<b>MY TECH STACK</b>
+<br>
+<ol><img src="https://i.ibb.co/HBR5wHk/cube.png" alt="cube" border="0"></ol>
+<br>
