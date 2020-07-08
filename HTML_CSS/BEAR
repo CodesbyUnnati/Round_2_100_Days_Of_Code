@@ -1,0 +1,406 @@
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--second-->
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--third-->
+
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--fourth-->
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--fivth-->
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--sixth-->
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--seventh-->
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--eight-->
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--ninth-->
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+<!--tenth-->
+<div class="bear">
+<div class="face">
+  <div class="shade"></div>
+  <div class="eyes"></div>
+   <div class="eyes"></div>
+  <div class="pupil"></div>
+  <div class="pupil"></div>
+  <div class="mouth"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+</div>
+<div class="paws"></div>
+<div class="paws"></div>
+  <div class="ear"></div>
+  <div class="ear"></div>
+<div class="in"></div>
+<div class="in"></div>
+</div>
+
+
+
+body
+{
+  background:#5F6E90;
+  margin:0 auto;
+}
+
+.paws{
+  position:absolute;
+    display:flex;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  justify-content:center;
+  width:55px;
+  height:25px;
+  border-radius:100px 100px 0 0;
+  background:#976758 ;
+  margin:765px 840px;
+  border:.1px solid #663E45;
+ 
+}
+.paws:nth-child(even)
+{
+  margin:765px 985px;
+}
+.face
+{
+  position:absolute;
+    display:flex;
+  justify-content:center;
+  margin:540px 840px;
+  width:200px;
+  height:250px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+clip-path: polygon(18% 0, 82% 0, 100% 66%, 100% 80%, 96% 100%, 4% 100%, 0 81%, 0 67%);
+  border-top-left-radius:100px;
+   border-top-right-radius:100px;
+  background:#663E45;
+ 
+  
+}
+.eyes{
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:white;
+  margin:50px -35px;
+  border-radius:50px;
+}
+.eyes:nth-child(even)
+{
+  margin:50px 35px;
+}
+.pupil{
+  position:absolute;
+  width:15px;
+  height:15px;
+  border-radius:50px;
+  background:black;
+  margin:65px -35px;
+}
+.pupil:nth-child(even)
+{
+  margin:65px 35px;
+}
+.mouth{
+  position:absolute;
+  width:80px;
+  height:80px;
+  background:white;
+  border-radius:20px 25px 40px 40px;
+  margin:90px 0px;
+}
+.nose{
+    position:absolute;
+  width:25px;
+  height:25px;
+  border-radius:50px;
+  background:black;
+  margin:120px 0px;
+  
+}
+.line
+{
+  position:absolute;
+  width:5px;
+  height:31px;
+  border-radius:50px;
+  background:black;
+  margin:140px 0px;
+}
+
+.shade
+{
+   position:absolute;
+    display:flex;
+  justify-content:center;
+  margin:200px 0px;
+  width:80px;
+  height:50px;
+  border-radius:100px 100px 0 0;
+  background:#A4725D;
+  opacity:0.8;
+ 
+}
+.ear
+{
+    position:absolute;
+  width:40px;
+  height:40px;
+  background:#7F4950;
+  margin:522px 855px;
+  border-radius:100px 100px 0 0;
+  transform:rotate(328deg);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.ear:nth-child(even)
+{
+   margin:521px 985px;
+  transform:rotate(33deg);
+}
+.in
+{
+     position:absolute;
+  width:25px;
+  height:30px;
+  background:#A4725D;
+  margin:530px 865px;
+  border-radius:100px 100px 0 0;
+  transform:rotate(328deg);
+   top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.in:nth-child(even)
+{
+   margin:529px 990px;
+  transform:rotate(30deg);
+}
+
+.bear
+{
+  position:absolute;
+  margin:0;
+  padding:0;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+    transform:translate(-20%,-60%);
+}
+.bear:nth-child(1)
+{
+  transform:translate(-40%,-60%);
+}
+.bear:nth-child(2)
+{
+  transform:translate(-20%,-60%);
+}
+.bear:nth-child(3)
+{
+  transform:translate(0%,-60%);
+}
+.bear:nth-child(4)
+{
+  transform:translate(20%,-60%);
+}
+.bear:nth-child(5)
+{
+  transform:translate(40%,-60%);
+}
+.bear:nth-child(6)
+{
+  transform:translate(-40%,-20%);
+}
+.bear:nth-child(7)
+{
+  transform:translate(-20%,-20%);
+}
+.bear:nth-child(8)
+{
+  transform:translate(0%,-20%);
+}
+.bear:nth-child(9)
+{
+  transform:translate(20%,-20%);
+}
+.bear:nth-child(10)
+{
+  transform:translate(40%,-20%);
+}
+
+
+
+gsap.from(".bear",{duration:0.5,delay:2,scale:0,stagger:0.5,ease:"in"});
