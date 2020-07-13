@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gooey</title>
+    <!--STYLE-->
+    <link href="goey.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  filter: contrast(50);
+  overflow: hidden;
+}
+
+.gooey span {
+  width: 100px;
+  height: 100px;
+  background: black;
+  display: inline-block;
+  border-radius: 50%;
+  animation: animate 2s ease-in-out infinite;
+  filter: blur(25px);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    margin: 10px;
+  }
+
+  50% {
+    margin: -20px;
+  }
+}
+
+</style>
+    <section>
+        <div class="gooey">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $(".gooey span").draggable();
+
+        })
+    </script>
+</body>
+
+</html>
