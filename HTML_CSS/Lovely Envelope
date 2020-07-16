@@ -1,0 +1,70 @@
+<div class="heart"></div>
+<div class="card"></div>
+
+body{
+  padding:0;
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:pink;
+}
+.card{
+  width:0;
+  height:0;
+  border-top:100px solid #eee;
+  border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+  border-bottom:100px solid #ccc;
+  border-right:170px solid #ddd;
+  border-left:170px solid #ccc;
+  
+}
+.heart{
+  
+width:32px;
+  height:32px;
+  background-color:#ff3838;
+  transform:translate(580%,-20%) rotate(45deg);
+  animation:beat 1s linear infinite;
+  
+}
+.heart:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#FF3838;
+  border-radius:50px;
+  transform:translateY(-50%);
+  
+}
+
+.heart:after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#FF3838;
+  border-radius:50px;
+  transform:translateX(-50%);
+  
+}
+@keyframes beat{
+  0%{
+    transform:translate(580%,-20%) rotate(45deg)scale(1.2);
+  }
+   10%{
+    transform:translate(580%,-20%) rotate(45deg)scale(1.3);
+  }
+    20%{
+    transform:translate(580%,-20%) rotate(45deg)scale(1.4);
+  }
+}
