@@ -1,0 +1,71 @@
+<div class="rod-1"></div>
+<div class="rod-2"></div>
+<div class="rod-3"></div>
+<div class="rod-4"></div>
+<div class="rod-5"></div>
+
+
+body{
+  padding:0;
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#313444;
+}
+.rod-1{
+  position:relative;
+  width:5vmin;
+  height:60vmin;
+  background:pink;
+  border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
+  
+}
+.rod-2{
+   position:relative;
+  width:5vmin;
+  height:60vmin;
+  top:0vmin;
+  left:-3vmin;
+  transform:rotate(45deg);
+  background:red;
+  border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
+    z-index:-1;
+}
+.rod-3{
+   position:relative;
+  width:5vmin;
+  top:1vmin;
+  height:60vmin;
+  left:-10vmin;
+  transform:rotate(130deg);
+  background:yellow;
+  border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
+    z-index:-1;
+}
+.rod-4{
+   position:relative;
+  width:5vmin;
+  top:1vmin;
+  height:60vmin;
+  left:-14vmin;
+  transform:rotate(90deg);
+  background:green;
+  border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
+  z-index:-1;
+}
+
+
+gsap.to(".rod-1",{
+  rotate:1200,yoyo:true,repeat:-1,duration:1
+});
+gsap.to(".rod-2",{
+  rotate:1200,yoyo:true,repeat:-1,duration:1
+});
+gsap.to(".rod-3",{
+  rotate:1200,yoyo:true,repeat:-1,duration:1
+});
+  gsap.to(".rod-4",{
+  rotate:1200,yoyo:true,repeat:-1,duration:1
+});
