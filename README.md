@@ -197,3 +197,6 @@
 <b>Lovely Envelope!<b>
   <ol><img src="https://i.ibb.co/dpG4rBP/Envelope.png" alt="Envelope" border="0"></ol>
   <br>
+  <b>Gmail Loader</b>
+  <br>
+  <ol><img src="https://i.ibb.co/GW1z6sh/gmail-logo.png" alt="gmail-logo" border="0"></ol>
