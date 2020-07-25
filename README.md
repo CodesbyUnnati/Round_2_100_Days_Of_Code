@@ -200,3 +200,6 @@
   <b>Gmail Loader</b>
   <br>
   <ol><img src="https://i.ibb.co/GW1z6sh/gmail-logo.png" alt="gmail-logo" border="0"></ol>
+<br>
+  <b>BIRDIE</b>
+  <ol><img src="https://i.ibb.co/BZrDsN1/birdie.png" alt="birdie" border="0"></ol>
