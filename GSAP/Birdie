@@ -1,0 +1,207 @@
+
+    <div class="wrap">
+        <div class="circle">
+            <div class="eye"></div>
+            <div class="wings"></div>
+          <div class="cap"></div>
+          <div class="cap-top"></div>
+           <div class="cap-top-c"></div>
+          
+            <div class="left-leg"></div>
+            <div class="right-leg"></div>
+        </div>
+    </div>
+    
+    
+    body {
+            background: #38a5c8;
+            color: #000;
+        }
+
+        .wrap {
+            width: 500px;
+            height: 380px;
+            margin: 130px auto;
+            position: relative;
+        }
+
+        .wrap::after {
+            position: absolute;
+            content: '';
+            background: #38a5c8;
+            height: 29px;
+            width: 250px;
+            left: 125px;
+            border-radius: 50%;
+            z-index: -4;
+        }
+
+        .circle {
+            left: 30%;
+            width: 200px;
+            height: 200px;
+            bottom: 60px;
+            position: absolute;
+            background: #eaeaea;
+            border-radius: 50%;
+        }
+
+        .circle::after {
+            height: 167px;
+            width: 184px;
+            background: #fff;
+            position: absolute;
+            content: '';
+            border-radius: 50%;
+            top: 1px;
+            left: 8px;
+        }
+
+        .circle::before {
+            content: '';
+            height: 180px;
+            width: 122px;
+            background-color: #fff;
+            position: absolute;
+            top: -150px;
+            left: 39px;
+            border-radius: 60px 60px 0 0;
+        }
+
+        .wings {
+            width: initial;
+            height: inherit;
+            border-radius: inherit;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .wings::after {
+            content: '';
+            position: absolute;
+            height: inherit;
+            width: 30px;
+            background-color: #492F16;
+            z-index: 1;
+            transform: rotate(6deg);
+        }
+
+        .wings::before {
+            content: '';
+            position: absolute;
+            height: inherit;
+            width: 30px;
+            background-color:#492F16 ;
+            z-index: 1;
+            transform: rotate(-6deg);
+            right: 0;
+
+        }
+       
+        .eye {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            background-color: #595959;
+            border-radius: 50%;
+            left: 60px;
+            top: -85px;
+        }
+.cap{
+     height: 40px;
+            width: 80px;
+            position: absolute;
+            background-color:#06D755;
+            border-radius: 20%;
+            left: 60px;
+            top: -165px;
+  z-index:-1;
+}
+.cap-top{
+     height: 40px;
+            width: 60px;
+            position: absolute;
+            background-color:pink;
+            border-radius: 20%;
+            left: 70px;
+            top: -190px;
+  z-index:-2;
+}
+.cap-top-c{
+     height: 20px;
+            width: 20px;
+            position: absolute;
+            background-color:#06D755;
+            border-radius: 50%;
+            left: 90px;
+            top: -208px;
+  z-index:-3;
+}
+   
+        .eye::after {
+            content: '';
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            right: -57px;
+            background-color: inherit;
+        }
+
+
+        .eye::before {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 0;
+            right: -44px;
+            top: 35px;
+            border: 25px solid transparent;
+            border-top: 25px solid orange;
+
+        }
+
+        .left-leg {
+            position: absolute;
+            left: 70px;
+            width: 0;
+            height: 46px;
+            bottom: -37px;
+            border: 2px solid #ffb902;
+            z-index: -1;
+        }
+
+        .right-leg {
+            position: absolute;
+            right: 70px;
+            width: 0;
+            height: 46px;
+            bottom: -37px;
+            border: 2px solid #ffb902;
+            z-index: -1;
+        }
+
+        .left-leg::after {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 0;
+            border: 20px solid transparent;
+            border-bottom: 8px solid #ffb801;
+            top: 23px;
+            left: -20px;
+        }
+        .right-leg::after {
+        content: '';
+        position: absolute;
+        height: 0;
+        width: 0;
+        border: 20px solid transparent;
+        border-bottom: 8px solid #ffb801;
+        top: 23px;
+        left: -20px;
+        }
+        
+        
+        gsap.to(".left-leg",{y:10,yoyo:true,repeat:-1})
+gsap.to(".right-leg",{y:10,delay:0.5,yoyo:true,repeat:-1})
