@@ -1,0 +1,426 @@
+<div class="container">
+<div class="rectangle-1">
+  <div class="gst">₹ 1200</div>
+  <div class="gst-2">GST Applicable</div>
+</div>
+  <div class="content"><h2>Early Bird</h2>
+  <p> Sales end by 31 July, 2020<br> 11:59 PM (Asia) OR<br> completion of 300 tickets.
+    <p>
+      </div>
+
+  <div class="circle-1">
+      <div class="circle-2"></div>
+  </div>
+  
+  <div class="col-1"></div>
+  <div class="line-1"></div>
+  <div class="get-ticket">Get Tickets</div>
+
+</div>
+
+<div class="container-2">
+<div class="rectangle-2">
+  <div class="gst-1">₹ 1200</div>
+  <div class="gst-3">GST Applicable</div>
+</div>
+  <div class="content-1"><h2>Early Bird</h2>
+  <p> Sales end by 31 July, 2020<br> 11:59 PM (Asia) OR<br> completion of 300 tickets.
+    <p>
+      </div>
+
+  <div class="circle-3">
+      <div class="circle-4"></div>
+  </div>
+  
+  <div class="col-2"></div>
+  <div class="line-2"></div>
+  <div class="get-ticket-1">Last Few Left</div>
+
+</div>
+
+
+<div class="container-3">
+<div class="rectangle-3">
+  <div class="gst-5">₹ 1200</div>
+  <div class="gst-4">GST Applicable</div>
+</div>
+  <div class="content-2"><h2>Early Bird</h2>
+  <p> Sales end by 31 July, 2020<br> 11:59 PM (Asia) OR<br> completion of 300 tickets.
+    <p>
+      </div>
+
+  <div class="circle-5">
+      <div class="circle-6"></div>
+  </div>
+  
+  <div class="col-3"></div>
+  <div class="line-3"></div>
+  <div class="get-ticket-2">Sold Out</div>
+
+</div>
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background:orange;
+}
+.container{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+  top:8vmin;
+}
+.rectangle-1{
+  width:780px;
+  background:#F6F6F6;
+  height:180px;
+}
+.circle-1{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:orange;
+  border-radius:50px;
+  top:-200px;
+  left:-390px;
+  z-index:100;
+}
+.col-1{
+  position:relative;
+  width:180px;
+  height:180px;
+  background:#2F80ED;
+  top:-312px;
+  left:300px;
+}
+.circle-2{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:orange;
+  border-radius:50px;
+  top:-5px;
+  left:780px;
+  z-index:100;
+}
+.line-1{
+  position:relative;
+  top:-450px;
+  left:-20px;
+  height:100px;
+  border:1px dashed gray;
+}
+.gst{
+  position:relative;
+  font-weight:800;
+  font-size:1.3rem;
+  color:red;
+  top:60px;
+  left:430px;
+}
+.gst-2{
+  position:relative;
+  font-weight:800;
+  font-size:1.2rem;
+  font-family:cursive;
+  color:red;
+  top:60px;
+  left:430px;
+}
+
+.content{
+    position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1rem;
+  color:gray;
+  top:-140px;
+  left:-180px;
+}
+.get-ticket{
+   position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1.3rem;
+  color:white;
+  top:-525px;
+  left:300px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background:orange;
+}
+.container-2{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+  top:35vmin;
+}
+.rectangle-2{
+  width:780px;
+  background:#F6F6F6;
+  height:180px;
+}
+.circle-3{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:orange;
+  border-radius:50px;
+  top:-200px;
+  left:-390px;
+  z-index:100;
+}
+.col-2{
+  position:relative;
+  width:180px;
+  height:180px;
+  background:#2F80ED;
+  top:-312px;
+  left:300px;
+}
+.circle-4{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:orange;
+  border-radius:50px;
+  top:-5px;
+  left:780px;
+  z-index:100;
+}
+.line-2{
+  position:relative;
+  top:-450px;
+  left:-20px;
+  height:100px;
+  border:1px dashed gray;
+}
+.gst-1{
+  position:relative;
+  font-weight:800;
+  font-size:1.5rem;
+  color:red;
+  top:60px;
+  left:430px;
+}
+.gst-3{
+   position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1.2rem;
+  color:#FF0000;
+  top:70px;
+  left:400px;
+}
+.content-2{
+    position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1rem;
+  color:gray;
+  top:-140px;
+  left:-180px;
+}
+.get-ticket-1{
+   position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1.5rem;
+  color:black;
+  top:-525px;
+  left:300px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background:orange;
+}
+.container-2{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+  top:-40vmin;
+}
+.rectangle-2{
+  width:780px;
+  background:#F6F6F6;
+  height:180px;
+}
+.circle-5{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:orange;
+  border-radius:50px;
+  top:-200px;
+  left:-390px;
+  z-index:100;
+}
+.col-2{
+  position:relative;
+  width:180px;
+  height:180px;
+  background:#FFCC00;
+  top:-312px;
+  left:300px;
+}
+.circle-6{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:orange;
+  border-radius:50px;
+  top:-5px;
+  left:780px;
+  z-index:100;
+}
+.line-2{
+  position:relative;
+  top:-450px;
+  left:-20px;
+  height:100px;
+  border:1px dashed gray;
+}
+.gst-1{
+  position:relative;
+  font-weight:800;
+  font-size:1.5rem;
+  color:red;
+  top:60px;
+  left:430px;
+}
+.gst-3{
+   position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1.2rem;
+  color:#FF0000;
+  top:70px;
+  left:400px;
+}
+.content-1{
+    position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1rem;
+  color:gray;
+  top:-140px;
+  left:-180px;
+}
+.get-ticket-1{
+   position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1.3rem;
+  color:white;
+  top:-525px;
+  left:300px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background:orange;
+}
+.container-3{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+  top:-85vmin;
+}
+.rectangle-3{
+  width:780px;
+  background:#F6F6F6;
+  height:180px;
+}
+.circle-3{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:orange;
+  border-radius:50px;
+  top:-200px;
+  left:-390px;
+  z-index:100;
+}
+.col-3{
+  position:relative;
+  width:180px;
+  height:180px;
+  background:red;
+  top:-312px;
+  left:300px;
+}
+.circle-4{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:orange;
+  border-radius:50px;
+  top:-5px;
+  left:780px;
+  z-index:100;
+}
+.line-3{
+  position:relative;
+  top:-450px;
+  left:-20px;
+  height:100px;
+  border:1px dashed gray;
+}
+.gst-5{
+  position:relative;
+  font-weight:800;
+  font-size:1.5rem;
+  color:red;
+  top:60px;
+  left:430px;
+}
+.gst-4{
+   position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1.2rem;
+  color:#FF0000;
+  top:70px;
+  left:400px;
+}
+.content-2{
+    position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1rem;
+  color:gray;
+  top:-140px;
+  left:-180px;
+}
+.get-ticket-2{
+   position:relative;
+  font-weight:800;
+  font-family:cursive;
+  font-size:1.5rem;
+  color:white;
+  top:-525px;
+  left:300px;
+}
