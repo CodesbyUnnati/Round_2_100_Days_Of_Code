@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+body{
+background:#D898B3;
+overflow:hidden;
+}
+.container{
+position:relative;
+margin:auto;
+display:block;
+width:500px;
+height:800px;
+animation:fly 3s linear infinite;
+
+}
+
+@keyframes fly{
+0%{
+tranform:translateY(0px);
+}
+50%{
+transform:translateY(-20px);
+}
+100%{
+transform:translateY(0px);
+}
+}
+.skull{
+position:relative;
+margin:auto;
+width:85%;
+height:40%;
+border:8px solid black;
+border-radius:50%;
+background:#FCCB89;
+
+}
+.eye-l{
+position: absolute;
+background: white;
+top: 20%;
+left: -.8%;
+border-radius: 50%;
+border: solid 4px black;
+width: 40%;
+height: 45%;
+animation:wink 3s linear infinite;
+
+}
+@keyframes wink{
+0%, 5%, 60%, 62%, 100% {
+transform: scaleX(1) scaleY(1);
+}
+1%, 61% {
+transform: scaleX(1.5) scaleY(0.1);
+}
+}
+.inner-black-l{
+position: absolute;
+background: white;
+top: 20%;
+left: 45%;
+border-radius: 50%;
+border: solid 30px black;
+width: 20%;
+height: 25%;
+z-index:1;
+}
+.eye-r{
+position: absolute;
+background: white;
+top: 20%;
+right: 0.1%;
+border-radius: 50%;
+border: solid 4px black;
+width: 40%;
+height: 45%;
+animation:wink 3s linear infinite;
+
+}
+.inner-black-r{
+position: absolute;
+background: white;
+top: 20%;
+left: 0%;
+border-radius: 50%;
+border: solid 30px black;
+width: 20%;
+height: 25%;
+z-index:1;
+}
+.green-l{
+top: 1.5%;
+position: absolute;
+background:#2EB92F;
+border-radius: 50%;
+width: 85%;
+height: 97%;
+left: 15%;
+}
+.green-r{
+top: 1.5%;
+position: absolute;
+background: #2EB92F;
+border-radius: 50%;
+width: 85%;
+height: 97%;
+left: 1%;
+}
+
+.mouth{
+position: absolute;
+height: 20%;
+left:40%;
+top:65%;
+width: 20%;
+border:4px solid black;
+border-radius: 58% 68% 72% 74% / 58% 68% 72% 74%;
+background:#000;
+animation:open 3s linear infinite;
+
+
+}
+
+.tongue{
+position:absolute;
+width:85%;
+height:50%;
+background:red;
+top:50%;
+left:8%;
+border-radius: 58% 68% 72% 74% / 58% 68% 72% 74%;
+
+}
+.hair {
+position: absolute;
+background-color: black;
+border-radius: 50% 50% 0 0/ 100% 100% 0px 0px;
+width: 94%;
+height: 29.9%;
+left: 3%;
+top: 0%;
+}
+.hair-cut{
+position: absolute;
+left: 40%;
+top: 32%;
+width: 20%;
+height: 70%;
+background:#FCCB89;
+-webkit-clip-path: polygon(50% 50%, 15% 100%, 80% 100%);
+clip-path: polygon(50% 50%, 15% 100%, 80% 100%);
+z-index: 3;
+}
+.hair-back{
+position:absolute;
+width:550px;
+height:200px;
+left:-75px;
+top:95px;
+border-radius:0px 0px 500px 500px;
+background:black;
+z-index:-10;
+
+}
+.frock{
+position:absolute;
+width:160px;
+height:200px;
+left:158px;
+top:320px;
+border-right:200px solid transparent;
+background:#2EB92F;
+border:8px solid black;
+border-radius:50px 50px 0px 0px;
+z-index:-1;
+
+}
+.black-strip{
+position:absolute;
+width:160px;
+height:30px;
+left:-8px;
+top:50px;
+background:#000;
+border:8px solid black;
+}
+.black-strip-2{
+border-bottom: 40px solid #000;
+border-left: 2px solid transparent;
+border-right: 2px solid transparent;
+height: 0px;
+border-radius:10px 10px 0px 0px;
+width: 190px;
+position: relative;
+top:170px;
+right:15px;
+
+}
+
+
+.leg-left {
+position: absolute;
+top: 450px;
+left: 180px;
+width: 38px;
+height: 150px;
+background: white;
+border: 7px solid black;
+z-index:-10;
+}
+
+.foot-left {
+position: absolute;
+top: 600px;
+left: 180px;
+height: 50px;
+width: 52px;
+background:black;
+border-radius: 0px 0px 100px 100px;
+
+}
+
+.leg-right {
+position: absolute;
+top: 450px;
+right: 179px;
+width: 38px;
+height: 160px;
+background: white;
+border: 7px solid black;
+z-index:-10;
+}
+
+.foot-right {
+position: absolute;
+top: 600px;
+left: 269px;
+height: 50px;
+width: 52px;
+background:black;
+border-radius: 0px 0px 100px 100px;
+
+}
+
+.left-arm {
+position: absolute;
+top: 245px;
+height: 180px;
+width: 40px;
+border-radius: 50%;
+border: solid 7px black;
+transform: rotate(100deg);
+left: 15%;
+border-top: transparent;
+background: #FCCB89;
+z-index:-10;
+}
+
+.right-arm {
+position: absolute;
+top: 245px;
+height: 180px;
+width: 40px;
+transform: translateX(180deg);
+border-radius: 50%;
+transform:rotate(-100deg);
+border: solid 7px black;
+right: 80px;
+border-top: transparent;
+background: #FCCB89;
+z-index:-10;
+
+
+}
+
+
+.sock-l{
+position:absolute;
+width:20px;
+height:20px;
+background:white;
+top:610px;
+left:195px;
+border-radius:0px 0px 10px 10px;
+
+}
+
+.sock-r{
+position:absolute;
+width:20px;
+height:20px;
+background:white;
+top:610px;
+right:195px;
+border-radius:0px 0px 10px 10px;
+
+}
+.hole{
+position:absolute;
+width:200px;
+height:50px;
+top:650px;
+left:150px;
+background:black;
+border-radius:50%;
+opacity:0.2;
+z-index:-10;
+}
+
+    </style>
+
+
+     <div class="container">
+
+         <div class="skull">
+             <div class="eye-l">
+                 <div class="inner-black-l"></div>
+                 <div class="green-l"></div>
+             </div>
+             <div class="eye-r">
+                 <div class="inner-black-r"></div>
+                 <div class="green-r"></div>
+             </div>
+             <div class="smile"></div>
+             <div class="mouth">
+                 <div class="tongue"></div>
+             </div>
+             <div class="hair">
+                 <div class="hair-cut"></div>
+                 <div class="hair-back"></div>
+             </div>
+         </div>
+         <div class="frock">
+             <div class="black-strip"></div>
+             <div class="black-strip-2"></div>
+         </div>
+         <div class="left-arm"></div>
+         <div class="right-arm"></div>
+         <div class="leg-left"></div>
+         <div class="foot-left"></div>
+         <div class="leg-right"></div>
+         <div class="foot-right"></div>
+         <div class="sock-l"></div>
+         <div class="sock-r"></div>
+         <div class="hole"></div>
+     </div>
+
+</body>
+</html>
