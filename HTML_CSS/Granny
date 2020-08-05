@@ -1,0 +1,327 @@
+<div class="container">
+  <div class="face">
+    <div class="eye-l"></div>
+    <div class="dot-l"></div>
+       <div class="dot-r"></div>
+    <div class="eye-r"></div>
+    <div class="line"></div>
+    <div class="smile"></div>
+    <div class="ear-l"></div>
+     <div class="ear-r"></div>
+    <div class="pearl-l"></div>
+      <div class="pearl-r"></div>
+    <div class="hair-part-1"></div>
+      <div class="hair-part-2"></div>
+    <div class="band"></div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="hand-l"></div>
+    <div class="hand-r"></div>
+        <div class="hand-l-2"></div>
+    <div class="hand-r-2"></div>
+    <div class="bangle-l"></div>
+       <div class="bangle-r"></div>
+    <div class="palm-l"></div>
+    <div class="palm-r"></div>
+    <div class="stick-top"></div>
+    <div class="stick"></div>
+    <div class="shoe-l"></div>
+    <div class="shoe-r"></div>
+
+  </div>
+</div>
+
+
+
+
+body{
+background:#2C4953;
+overflow:hidden;
+}
+.container{
+position:relative;
+margin:auto;
+display:block;
+width:500px;
+height:800px;
+
+}
+.face{
+  position:relative;
+  width:250px;
+  height:150px;
+  top:100px;
+  background:#F2BBAD;
+  border-radius:150px;
+  
+}
+.eye-l{
+  position:absolute;
+  width:60px;
+  height:60px;
+  background:#AEE1F2;
+    border:2px solid black;
+  border-radius:50px;
+  left:50px;
+  top:30px;
+}
+.eye-r{
+    position:absolute;
+  width:60px;
+  height:60px;
+  background:#AEE1F2;
+    border:2px solid black;
+  border-radius:50px;
+  right:50px;
+  top:30px;
+}
+.line{
+      position:absolute;
+  width:30px;
+  height:15px;
+  background:#AEE1F2;
+  border-radius:50px;
+border:2px solid black;
+  right:107px;
+  top:55px;
+}
+.smile{
+     position:absolute;
+  width:50px;
+  height:30px;
+  background:#fff;
+  border-radius:0px 0px 50px 50px;
+  right:100px;
+  top:100px;
+}
+.dot-r{
+    position:absolute;
+  width:20px;
+  height:20px;
+  background:#000;
+  border-radius:50px;
+  right:70px;
+  top:52px;
+  z-index:1;
+}
+.dot-l{
+    position:absolute;
+  width:20px;
+  height:20px;
+  background:#000;
+  border-radius:50px;
+  left:70px;
+  top:52px;
+  z-index:1;
+}
+.ear-l{
+    position:absolute;
+  width:60px;
+  height:30px;
+  top:50px;
+  left:-35px;
+  background:#F2BBAD;
+  border-radius:50px 50px 0px 0px;
+  transform:rotate(-88deg);
+  z-index:-1;
+}
+.ear-r{
+    position:absolute;
+  width:60px;
+  height:30px;
+  top:50px;
+  right:-35px;
+  background:#F2BBAD;
+  border-radius:50px 50px 0px 0px;
+  transform:rotate(88deg);
+  z-index:-1;
+}
+.pearl-l{
+    position:absolute;
+  width:20px;
+  height:20px;
+  background:orange;
+  border-radius:50px;
+  left:-20px;
+  top:82px;
+  z-index:1;
+}
+.pearl-r{
+    position:absolute;
+  width:20px;
+  height:20px;
+  background:orange;
+  border-radius:50px;
+  right:-20px;
+  top:82px;
+  z-index:1;
+}
+.hair-part-1{
+    position:absolute;
+  width:180px;
+  height:50px;
+  top:-35px;
+  left:35px;
+  background:#B7CEDE;
+  border-radius:100px 100px 0px 0px;
+}
+.hair-part-2{
+    position:absolute;
+  width:250px;
+  height:150px;
+  top:-75px;
+  left:0px;
+  background:#8EAABD;
+  border-radius:100px 100px 0px 0px;
+  z-index:-1;
+}
+.band{
+    position:absolute;
+  width:180px;
+  height:200px;
+  top:-45px;
+  left:35px;
+  background:orange;
+  border-radius:100px 100px 0px 0px;
+  z-index:-1;
+}
+.top
+{
+  position:relative;
+ border-bottom: 100px solid  #B72276;
+            border-left: 80px solid transparent;
+            border-right: 80px solid transparent;
+            height: 0;
+  border-radius:20px;
+            width: 180px;
+            position: relative;
+            top:155px;
+  left:-45px;
+            
+}
+.bottom{
+  position:absolute;
+  width:320px;
+  height:240px;
+  top:220px;
+  left:-34px;
+  border-radius:100px 100px 0px 0px;
+  background:#B72276;
+  z-index:-1;
+}
+.hand-l{
+  position:absolute;
+  width:50px;
+  height:180px;
+  top:120px;
+  left:-50px;
+  transform:rotate(40deg);
+  border-radius:80px;
+  background:#972B68;
+}
+.hand-r{
+  position:absolute;
+  width:50px;
+  height:180px;
+  top:120px;
+  right:-50px;
+  transform:rotate(-40deg);
+  border-radius:80px;
+  background:#972B68;
+}
+.hand-r-2{
+  position:absolute;
+  width:60px;
+  height:180px;
+  top:175px;
+  right:-30px;
+  transform:rotate(90deg);
+  border-top-left-radius:50px;
+    border-top-right-radius:50px;
+  background:#972B68; 
+}
+
+.hand-l-2{
+  position:absolute;
+  width:60px;
+  height:180px;
+  top:175px;
+  left:-30px;
+  transform:rotate(90deg);
+  border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+  background:#972B68;
+}
+.bangle-l{
+  position:absolute;
+  width:57px;
+  height:20px;
+  top:255px;
+  left:55px;
+  background:orange;
+  transform:rotate(90deg);
+}
+.bangle-r{
+  position:absolute;
+  width:57px;
+  height:20px;
+  top:255px;
+  right:55px;
+  background:orange;
+  transform:rotate(90deg);
+}
+.palm-l{
+  position:absolute;
+  width:50px;
+  height:20px;
+  border-radius:20px 20px 0px 0px;
+  background:#F2BBAD;
+  transform:rotate(90deg);
+  top:255px;
+  left:75px;
+}
+.palm-r{
+  position:absolute;
+  width:50px;
+  height:20px;
+  border-radius:20px 20px 0px 0px;
+  background:#F2BBAD;
+  transform:rotate(-90deg);
+  top:255px;
+  right:75px;
+}
+.stick-top{
+  position:absolute;
+  width:50px;
+  height:20px;
+  top:250px;
+  left:100px;
+  background:brown;
+  border-radius:10px;
+}
+.stick{
+  position:absolute;
+  width:20px;
+  height:230px;
+  top:270px;
+  left:115px;
+  background:brown;
+}
+.shoe-l{
+  position:absolute;
+  width:60px;
+  height:40px;
+  top:460px;
+    left:10px;
+  background:black;
+  border-radius:0px 0px 50px 50px;
+}
+.shoe-r{
+  position:absolute;
+  width:60px;
+  height:40px;
+  top:460px;
+  right:10px;
+  background:black;
+  border-radius:0px 0px 50px 50px;
+}
