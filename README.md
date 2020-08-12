@@ -16,7 +16,11 @@
   <br>
   <b>THE SMILEY</B>
   <ol><img src="https://i.ibb.co/z4tqYjY/smiley.png" alt="smiley" border="0"></ol>
+  <br>
   
+  <b>Girl (Flat illustration)</b>
+  <ol><img src="https://i.ibb.co/wd2092N/girl.png" alt="girl" border="0"></ol>
+  <br>
   
   <b>THE LIPSTICK	💄</b>
  <ol> <img src="https://i.ibb.co/bJrgHLm/lipstick.png" alt="lipstick" border="0"></ol>
