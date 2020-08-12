@@ -1,0 +1,344 @@
+<div class="container">
+  <div class="head"> </div>
+    <div class="bun"></div>
+    <div class="band"></div>
+    <div class="hair"></div>
+    <div class="brow-l"></div>
+    <div class="brow-r"></div>
+    <div class="eye-l"></div>
+    <div class="eye-r"></div>
+    <div class="smile"></div>
+    <div class="ear-l"></div>
+    <div class="ear-r"></div>
+    <div class="neck"></div>
+
+  <div class="top"></div>
+  <div class="sleeve-l"></div>
+  <div class="sleeve-r"></div>
+  <div class="hand-l"></div>
+  <div class="hand-r"></div>
+  <div class="palm-l"></div>
+  <div class="palm-r"></div>
+  <div class="stomach"></div>
+  <div class="dot"></div>
+  <div class="bottom"></div>
+  <div class="pant-l"></div>
+  <div class="pant-r"></div>
+  <div class="leg-l"></div>
+  <div class="leg-r"></div>
+  <div class="leg-1-l"></div>
+  <div class="leg-1-r"></div>
+  <div class="sock-l"></div>
+  <div class="sock-r"></div>
+  <div class="shoe-l"></div>
+<div class="shoe-r"></div>
+  
+</div>
+
+
+
+body{
+background:#D898B3;
+overflow:hidden;
+}
+.container{
+position:relative;
+margin:auto;
+display:block;
+width:500px;
+height:800px;
+
+}
+.head{
+  position:relative;
+margin:auto;
+width:160px;
+height:180px;
+  top:10%;
+border-radius:100px;
+background:#9E6553;
+
+}
+.ear-l{
+    position:relative;
+margin:auto;
+width:60px;
+height:20px;
+  top:-18px;
+  left:80px;
+  transform:rotate(90deg);
+border-radius:100px;
+background:#9E6553;
+}
+
+.ear-r{
+    position:relative;
+margin:auto;
+width:60px;
+height:20px;
+  top:-40px;
+  right:80px;
+  transform:rotate(90deg);
+border-radius:100px;
+background:#9E6553;
+}
+.hair{
+  position:absolute;
+  width:210px;
+  height:180px;
+  top:60px;
+  left:145px;
+  border-radius:100px;
+  background:#002338;
+  z-index:-1;
+}
+.bun{
+  position:absolute;
+margin:auto;
+width:100px;
+height:80px;
+  top:1%;
+  left:200px;
+border-radius:100px;
+background:#002338;
+  z-index:-1;
+}
+.brow-l{
+  position:absolute;
+  width:35px;
+  height:10px;
+  background:black;
+  border-radius:50px;
+  left:200px;
+  top:130px;
+}
+.brow-r{
+  position:absolute;
+  width:35px;
+  height:10px;
+  background:black;
+  border-radius:50px;
+  right:200px;
+  top:130px;
+}
+.eye-l{
+  position:absolute;
+  width:15px;
+  height:18px;
+  background:black;
+  border-radius:50px;
+  left:210px;
+  top:150px;
+}
+.eye-r{
+  position:absolute;
+  width:15px;
+  height:18px;
+  background:black;
+  border-radius:50px;
+  right:210px;
+  top:150px;
+}
+.smile{
+   position:absolute;
+  width:65px;
+  height:38px;
+  background:#fff;
+  top:190px;
+  border-radius:0px 0px 50px 50px;
+  left:220px;
+}
+.neck{
+    position:absolute;
+  width:55px;
+  height:88px;
+  background:#9E6553;
+  top:230px;
+  border-radius: 0px 0px 40px 40px;
+  left:225px;
+}
+.top{
+      position:absolute;
+  width:165px;
+  height:105px;
+  background:#EC2262;
+  top:280px;
+  border-radius: 60px 60px 0px 0px;
+  left:170px;
+  z-index:-1;
+}
+.sleeve-l{
+     position:absolute;
+  width:55px;
+  height:108px;
+  background:#CE1855;
+  top:300px;
+  border-radius: 60px 60px 0px 0px;
+  left:160px;
+  z-index:-2;
+}
+.sleeve-r{
+     position:absolute;
+  width:55px;
+  height:108px;
+  background:#CE1855;
+  top:300px;
+  border-radius: 60px 60px 0px 0px;
+  right:155px;
+  z-index:-2;
+}
+.stomach{
+     position:absolute;
+  width:75px;
+  height:138px;
+  background:#9F6455;
+  top:300px;
+  left:215px;
+  z-index:-2;
+
+}
+.dot{
+    position:absolute;
+  width:10px;
+  height:5px;
+  background:#65302C;
+  border-radius:50px;
+  right:240px;
+  top:420px;
+}
+.bottom{
+      position:absolute;
+  width:165px;
+  height:88px;
+  background:#90278E;
+  top:435px;
+  border-radius: 60px 60px 0px 0px;
+  left:170px;
+  z-index:-1;
+}
+.pant-l{
+        position:absolute;
+  width:83px;
+  height:260px;
+  background:#5F185B;
+  top:445px;
+  border-radius: 60px;
+  left:170px;
+  z-index:-1;
+}
+.pant-r{
+        position:absolute;
+  width:83px;
+  height:250px;
+  background:#90278E;
+  top:455px;
+  border-radius: 60px;
+  right:165px;
+  z-index:-1;
+}
+
+.leg-l{
+        position:absolute;
+  width:53px;
+  height:60px;
+  background:#A26554;
+  top:690px;
+  border-radius: 0px;
+  left:184px;
+  z-index:-2;
+}
+.leg-r{
+           position:absolute;
+  width:53px;
+  height:60px;
+  background:#A26554;
+  top:690px;
+  border-radius: 0px;
+  right:184px;
+  z-index:-2;  
+}
+.sock-l{
+        position:absolute;
+  width:53px;
+  height:20px;
+  background:#C61950;
+  top:730px;
+  border-radius: 0px;
+  left:184px;
+  z-index:-2;
+}
+.sock-r{
+           position:absolute;
+  width:53px;
+  height:20px;
+  background:#C61950;
+  top:730px;
+  border-radius: 0px;
+  right:184px;
+  z-index:-2;
+}
+
+.shoe-l{
+        position:absolute;
+  width:93px;
+  height:20px;
+  background:#002338;
+  top:740px;
+  border-radius: 0px;
+  left:144px;
+  z-index:-2;
+}
+.shoe-r{
+           position:absolute;
+  width:93px;
+  height:20px;
+  background:#002338;
+  top:740px;
+  border-radius: 0px;
+  right:144px;
+  z-index:-2;
+}
+
+
+.hand-l{
+        position:absolute;
+  width:38px;
+  height:150px;
+  background:#A26554;
+  top:405px;
+  border-radius: 0px;
+  left:162px;
+  z-index:-3;
+}
+.hand-r{
+             position:absolute;
+  width:38px;
+  height:150px;
+  background:#A26554;
+  top:405px;
+  border-radius: 0px;
+  right:158px;
+  z-index:-3;  
+}
+.palm-l{
+  position:absolute;
+  width:40px;
+  height:40px;
+  top:515px;
+  left:140px;
+  border-radius:20px 20px 0px 0px;
+  transform:rotate(-90deg);
+  background:#A26554;
+  z-index:-3;
+}
+.palm-r{
+  position:absolute;
+  width:40px;
+  height:40px;
+  top:515px;
+  right:140px;
+  border-radius:20px 20px 0px 0px;
+  transform:rotate(90deg);
+  background:#A26554;
+  z-index:-3;
+}
