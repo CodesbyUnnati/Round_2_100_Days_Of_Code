@@ -1,4 +1,5 @@
 <h1 align="center"><b>Round 2 of 100 Days Of Coding 😀</b></h1>
+<a href="https://medium.com/@unnaticse2019/my-experience-on-completing-2nd-round-of-100-days-of-code-challenge-776e52f37ad2">Check out my Blog</a>
   
   
  <i> This Readme file consists of my journey of #100DaysOfCode Challenge.I will be discussing about my progress here...<i>
