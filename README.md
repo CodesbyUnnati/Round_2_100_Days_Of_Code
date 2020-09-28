@@ -1,4 +1,4 @@
-<h1 align="center"><b>Round 2 of 100 Days Of Coding 😀</b></h1><br>
+<h1 align="center"><b>Round 2 of 100 Days Of Coding😀</b></h1><br>
 
 <a href="https://medium.com/@unnaticse2019/my-experience-on-completing-2nd-round-of-100-days-of-code-challenge-776e52f37ad2">Check out my Blog</a> 
 <br><a href="https://webfolio-unnati.netlify.app/"> Compiled Website</a>
